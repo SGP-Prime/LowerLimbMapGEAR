@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GEAR — Mapa de bloqueios do plexo lombossagrado</title>
+<title>GEAR — Lumbosacral plexus block map</title>
 <style>
 *, *::before, *::after { box-sizing: border-box; }
 
@@ -272,81 +272,77 @@ body { display: flex; }
 <body>
   <aside class="sidebar">
     <div class="drawer-handle" aria-hidden="true"></div>
-    <h3>Bloqueios</h3>
+    <h3>Blocks</h3>
     <div class="presets">
-          <button data-preset="all">Mostrar todos</button>
-          <button data-preset="none">Ocultar todos</button>
-          <button data-preset="anca">Anca / fratura</button>
-          <button data-preset="joelho">Joelho / PTJ</button>
-          <button data-preset="pe">Pé e tornozelo</button>
-          <button data-preset="parede">Parede abdominal</button>
-          <button data-preset="fascial">Plano fascial profundo</button>
-          <button data-preset="motor-sparing">Poupadores motores</button>
+          <button data-preset="all">Show all</button>
+          <button data-preset="none">Hide all</button>
+          <button data-preset="hip">Hip / fracture</button>
+          <button data-preset="knee">Knee / TKA</button>
+          <button data-preset="foot">Foot & ankle</button>
+          <button data-preset="proximal">Abdominal / proximal</button>
+          <button data-preset="fascial">Deep fascial plane</button>
+          <button data-preset="motor-sparing">Motor-sparing</button>
     </div>
         <div class="block-group">
-          <h4>Parede abdominal</h4>
-          <label class="block-item"><input type="checkbox" data-block="tapsub" checked><span class="block-color" style="background:#FB8500"></span><span class="block-name">TAP subcostal</span></label>
-          <label class="block-item"><input type="checkbox" data-block="taplat" checked><span class="block-color" style="background:#F77F00"></span><span class="block-name">TAP lateral</span></label>
-          <label class="block-item"><input type="checkbox" data-block="tappost" checked><span class="block-color" style="background:#E85D04"></span><span class="block-name">TAP posterior</span></label>
-          <label class="block-item"><input type="checkbox" data-block="rectus" checked><span class="block-color" style="background:#DDA15E"></span><span class="block-name">Bainha do recto</span></label>
-          <label class="block-item"><input type="checkbox" data-block="iihg" checked><span class="block-color" style="background:#BC6C25"></span><span class="block-name">Ilioinguinal–ílio-hipogástrico</span></label>
+          <h4>Abdominal wall / proximal</h4>
+          <label class="block-item"><input type="checkbox" data-block="iihg" checked><span class="block-color" style="background:#BC6C25"></span><span class="block-name">Ilioinguinal–iliohypogastric block</span></label>
         </div>
         <div class="block-group">
-          <h4>Quadrado lombar</h4>
-          <label class="block-item"><input type="checkbox" data-block="ql1" checked><span class="block-color" style="background:#D62976"></span><span class="block-name">Quadrado lombar — QL1 (lateral)</span></label>
-          <label class="block-item"><input type="checkbox" data-block="ql2" checked><span class="block-color" style="background:#B5179E"></span><span class="block-name">Quadrado lombar — QL2 (posterior)</span></label>
-          <label class="block-item"><input type="checkbox" data-block="ql3" checked><span class="block-color" style="background:#7B2CBF"></span><span class="block-name">Quadrado lombar — QL3 (transmuscular)</span></label>
+          <h4>Quadratus lumborum</h4>
+          <label class="block-item"><input type="checkbox" data-block="ql1" checked><span class="block-color" style="background:#D62976"></span><span class="block-name">Quadratus lumborum — QL1 (lateral)</span></label>
+          <label class="block-item"><input type="checkbox" data-block="ql2" checked><span class="block-color" style="background:#B5179E"></span><span class="block-name">Quadratus lumborum — QL2 (posterior)</span></label>
+          <label class="block-item"><input type="checkbox" data-block="ql3" checked><span class="block-color" style="background:#7B2CBF"></span><span class="block-name">Quadratus lumborum — QL3 (transmuscular)</span></label>
         </div>
         <div class="block-group">
           <h4>Paravertebral / ESP</h4>
-          <label class="block-item"><input type="checkbox" data-block="esp" checked><span class="block-color" style="background:#5A189A"></span><span class="block-name">Erector da espinha (ESP) lombar</span></label>
+          <label class="block-item"><input type="checkbox" data-block="esp" checked><span class="block-color" style="background:#5A189A"></span><span class="block-name">Erector spinae plane (lumbar)</span></label>
         </div>
         <div class="block-group">
-          <h4>Anca / pélvico</h4>
-          <label class="block-item"><input type="checkbox" data-block="lpb" checked><span class="block-color" style="background:#023E8A"></span><span class="block-name">Plexo lombar (Shamrock / psoas)</span></label>
+          <h4>Hip / pelvic</h4>
+          <label class="block-item"><input type="checkbox" data-block="lpb" checked><span class="block-color" style="background:#023E8A"></span><span class="block-name">Lumbar plexus block (Shamrock / psoas)</span></label>
           <label class="block-item"><input type="checkbox" data-block="peng" checked><span class="block-color" style="background:#0096C7"></span><span class="block-name">PENG (pericapsular nerve group)</span></label>
+          <label class="block-item"><input type="checkbox" data-block="pudb" checked><span class="block-color" style="background:#7B5E1A"></span><span class="block-name">Pudendal nerve block</span></label>
         </div>
         <div class="block-group">
-          <h4>Coxa anterior</h4>
-          <label class="block-item"><input type="checkbox" data-block="fnb" checked><span class="block-color" style="background:#0077B6"></span><span class="block-name">Nervo femoral</span></label>
-          <label class="block-item"><input type="checkbox" data-block="fics" checked><span class="block-color" style="background:#00B4D8"></span><span class="block-name">Fáscia ilíaca suprainguinal</span></label>
-          <label class="block-item"><input type="checkbox" data-block="fici" checked><span class="block-color" style="background:#48CAE4"></span><span class="block-name">Fáscia ilíaca infrainguinal</span></label>
-          <label class="block-item"><input type="checkbox" data-block="acb" checked><span class="block-color" style="background:#2A9D8F"></span><span class="block-name">Canal dos adutores</span></label>
+          <h4>Anterior thigh</h4>
+          <label class="block-item"><input type="checkbox" data-block="fnb" checked><span class="block-color" style="background:#0077B6"></span><span class="block-name">Femoral nerve block</span></label>
+          <label class="block-item"><input type="checkbox" data-block="fics" checked><span class="block-color" style="background:#00B4D8"></span><span class="block-name">Fascia iliaca — suprainguinal</span></label>
+          <label class="block-item"><input type="checkbox" data-block="fici" checked><span class="block-color" style="background:#48CAE4"></span><span class="block-name">Fascia iliaca — infrainguinal</span></label>
+          <label class="block-item"><input type="checkbox" data-block="acb" checked><span class="block-color" style="background:#2A9D8F"></span><span class="block-name">Adductor canal block</span></label>
+          <label class="block-item"><input type="checkbox" data-block="actb" checked><span class="block-color" style="background:#E0954A"></span><span class="block-name">Anterior cutaneous n. of thigh block</span></label>
         </div>
         <div class="block-group">
-          <h4>Coxa lateral / posterior</h4>
-          <label class="block-item"><input type="checkbox" data-block="lfcb" checked><span class="block-color" style="background:#52B788"></span><span class="block-name">Cutâneo femoral lateral</span></label>
-          <label class="block-item"><input type="checkbox" data-block="obtb" checked><span class="block-color" style="background:#2D6A4F"></span><span class="block-name">Obturador (+ selectivo dos ramos)</span></label>
-          <label class="block-item"><input type="checkbox" data-block="pfcb" checked><span class="block-color" style="background:#74C69D"></span><span class="block-name">Cutâneo femoral posterior</span></label>
+          <h4>Lateral / posterior thigh</h4>
+          <label class="block-item"><input type="checkbox" data-block="lcnt" checked><span class="block-color" style="background:#52B788"></span><span class="block-name">Lateral cutaneous n. of thigh block</span></label>
+          <label class="block-item"><input type="checkbox" data-block="obtb" checked><span class="block-color" style="background:#2D6A4F"></span><span class="block-name">Obturator nerve block (± selective)</span></label>
+          <label class="block-item"><input type="checkbox" data-block="pfcb" checked><span class="block-color" style="background:#C2407A"></span><span class="block-name">Posterior cutaneous n. of thigh block</span></label>
         </div>
         <div class="block-group">
-          <h4>Família do isquiático</h4>
-          <label class="block-item"><input type="checkbox" data-block="subg" checked><span class="block-color" style="background:#6A0DAD"></span><span class="block-name">Isquiático subglúteo / transglúteo</span></label>
-          <label class="block-item"><input type="checkbox" data-block="antsci" checked><span class="block-color" style="background:#9D4EDD"></span><span class="block-name">Isquiático anterior</span></label>
-          <label class="block-item"><input type="checkbox" data-block="pop" checked><span class="block-color" style="background:#C71585"></span><span class="block-name">Isquiático poplíteo</span></label>
-          <label class="block-item"><input type="checkbox" data-block="ipack" checked><span class="block-color" style="background:#FF5C8A"></span><span class="block-name">iPACK (cápsula posterior do joelho)</span></label>
-          <label class="block-item"><input type="checkbox" data-block="pudb" checked><span class="block-color" style="background:#7B5E1A"></span><span class="block-name">Pudendo</span></label>
+          <h4>Sciatic family</h4>
+          <label class="block-item"><input type="checkbox" data-block="subg" checked><span class="block-color" style="background:#6A0DAD"></span><span class="block-name">Sciatic — subgluteal / transgluteal</span></label>
+          <label class="block-item"><input type="checkbox" data-block="antsci" checked><span class="block-color" style="background:#9D4EDD"></span><span class="block-name">Sciatic — anterior</span></label>
+          <label class="block-item"><input type="checkbox" data-block="pop" checked><span class="block-color" style="background:#C71585"></span><span class="block-name">Sciatic — popliteal</span></label>
+          <label class="block-item"><input type="checkbox" data-block="ipack" checked><span class="block-color" style="background:#FF5C8A"></span><span class="block-name">iPACK (posterior knee capsule)</span></label>
         </div>
         <div class="block-group">
-          <h4>Ramos terminais</h4>
-          <label class="block-item"><input type="checkbox" data-block="saphb" checked><span class="block-color" style="background:#118AB2"></span><span class="block-name">Safeno (joelho / perna)</span></label>
-          <label class="block-item"><input type="checkbox" data-block="ankle" checked><span class="block-color" style="background:#D00000"></span><span class="block-name">Bloqueio do tornozelo (5 nervos)</span></label>
+          <h4>Terminal branches</h4>
+          <label class="block-item"><input type="checkbox" data-block="saphb" checked><span class="block-color" style="background:#118AB2"></span><span class="block-name">Saphenous nerve (knee / leg)</span></label>
+          <label class="block-item"><input type="checkbox" data-block="ankle" checked><span class="block-color" style="background:#D00000"></span><span class="block-name">Ankle block (5 nerves)</span></label>
         </div>
     <p class="footnote">
-      Ative blocos individuais ou aplique predefinições para sobrepor a
-      cobertura dos bloqueios ecoguiados sobre o esquema do plexo lombossagrado.
+      Toggle individual blocks or apply presets to overlay ultrasound-guided
+      block coverage on the lumbosacral plexus schematic.
       GEAR — Grupo de Ecografia e Anestesia Regional.
     </p>
   </aside>
 
   <section class="map-area">
-<svg viewBox="0 0 2120 1760" xmlns="http://www.w3.org/2000/svg" role="img" font-family="'Nunito Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<svg viewBox="0 0 2240 2090" xmlns="http://www.w3.org/2000/svg" role="img" font-family="'Nunito Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
   <title>Lumbosacral Plexus — Extended Schematic Map (GEAR)</title>
   <desc>Topological metro-style map of the lumbosacral plexus, GEAR-branded.</desc>
   <defs>
     <linearGradient id="gearHero" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#39c3d4"/>
-      <stop offset="100%" stop-color="#0d4f56"/>
+      <stop offset="0%" stop-color="#39c3d4"/><stop offset="100%" stop-color="#0d4f56"/>
     </linearGradient>
     <style>
       .bg{fill:#f7fbfc}
@@ -362,12 +358,10 @@ body { display: flex; }
       .lbl-minor{font-size:10px;fill:#5a7a82}
     </style>
   </defs>
-
-  <rect class="bg" x="0" y="0" width="2120" height="1760"/>
-  <rect x="0" y="0" width="2120" height="82" fill="url(#gearHero)"/>
+  <rect class="bg" x="0" y="0" width="2240" height="2090"/>
+  <rect x="0" y="0" width="2240" height="82" fill="url(#gearHero)"/>
   <text x="40" y="52" font-size="24" font-weight="700" fill="#ffffff">The Lumbosacral Plexus</text>
-
-    <g transform="translate(1776,6) scale(0.0559)" fill-rule="evenodd" clip-rule="evenodd">
+    <g transform="translate(1896,6) scale(0.0559)" fill-rule="evenodd" clip-rule="evenodd">
     
   
   <g
@@ -804,535 +798,522 @@ body { display: flex; }
        id="path49" />
   </g>
   </g>
-
   <g class="lbl-col" text-anchor="middle">
-    <text x="110" y="120">RAÍZES</text>
-    <text x="292" y="120">PLEXOS</text>
-    <text x="660" y="120">NERVOS PRINCIPAIS</text>
-    <text x="1095" y="120">RAMOS / DIVISÕES</text>
-    <text x="1670" y="120">RAMOS TERMINAIS</text>
+    <text x="110" y="120">ROOTS</text>
+    <text x="292" y="120">PLEXUSES</text>
+    <text x="662" y="120">MAJOR NERVES</text>
+    <text x="1120" y="120">BRANCHES / DIVISIONS</text>
+    <text x="1750" y="120">TERMINAL BRANCHES</text>
   </g>
   <g stroke="#d0e8ec" stroke-width="1" stroke-dasharray="2,4">
-    <line x1="110" y1="135" x2="110" y2="1330"/>
-    <line x1="292" y1="135" x2="292" y2="1330"/>
-    <line x1="660" y1="135" x2="660" y2="1330"/>
-    <line x1="1095" y1="135" x2="1095" y2="1330"/>
-    <line x1="1520" y1="135" x2="1520" y2="1330"/>
+    <line x1="110" y1="135" x2="110" y2="1600"/>
+    <line x1="292" y1="135" x2="292" y2="1600"/>
+    <line x1="662" y1="135" x2="662" y2="1600"/>
+    <line x1="1120" y1="135" x2="1120" y2="1600"/>
+    <line x1="1580" y1="135" x2="1580" y2="1600"/>
   </g>
-
   
+<path d="M 127 320 L 232 320" class="path-pre"/>
+<path d="M 127 465 L 232 465" class="path-pre"/>
+<path d="M 127 610 L 232 610" class="path-pre"/>
+<path d="M 127 755 L 232 755" class="path-pre"/>
+<path d="M 127 900 L 232 900" class="path-pre"/>
+<path d="M 127 1045 L 232 1045" class="path-pre"/>
+<path d="M 127 1190 L 232 1190" class="path-pre"/>
+<path d="M 127 1335 L 232 1335" class="path-pre"/>
+<path d="M 127 1480 L 232 1480" class="path-pre"/>
 
-<path d="M 127 285 L 232 285" class="path-pre"/>
-<path d="M 127 396 L 232 396" class="path-pre"/>
-<path d="M 127 508 L 232 508" class="path-pre"/>
-<path d="M 127 619 L 232 619" class="path-pre"/>
-<path d="M 127 730 L 232 730" class="path-pre"/>
-<path d="M 127 841 L 232 841" class="path-pre"/>
-<path d="M 127 952 L 232 952" class="path-pre"/>
-<path d="M 127 1064 L 232 1064" class="path-pre"/>
-<path d="M 127 1175 L 232 1175" class="path-pre"/>
+  <rect x="232" y="280" width="120" height="509" rx="22" fill="#14707a" fill-opacity="0.07" stroke="#14707a" stroke-width="2.5"/>
+  <text x="292" y="530" text-anchor="middle" font-size="13" font-weight="700" fill="#14707a" transform="rotate(-90 292 534)">LUMBAR PLEXUS</text>
+  <text x="292" y="548" text-anchor="middle" font-size="10" fill="#5a7a82" transform="rotate(-90 292 534)">within psoas major</text>
+  <rect x="232" y="884" width="120" height="636" rx="22" fill="#5a189a" fill-opacity="0.07" stroke="#5a189a" stroke-width="2.5"/>
+  <text x="292" y="1198" text-anchor="middle" font-size="13" font-weight="700" fill="#5a189a" transform="rotate(-90 292 1202)">SACRAL PLEXUS</text>
+  <text x="292" y="1215" text-anchor="middle" font-size="10" fill="#5a7a82" transform="rotate(-90 292 1202)">on piriformis</text>
+  <rect x="228" y="818" width="128" height="38" rx="19" fill="#ffffff" stroke="#5a7a82" stroke-width="3" stroke-dasharray="6,3"/>
+  <text x="292" y="834" text-anchor="middle" font-size="10.5" font-weight="700" fill="#5a7a82">LUMBOSACRAL</text>
+  <text x="292" y="848" text-anchor="middle" font-size="9.5" font-weight="700" fill="#5a7a82">TRUNK (L4–L5)</text>
 
-  <rect x="232" y="247" width="120" height="402" rx="22" fill="#14707a" fill-opacity="0.07" stroke="#14707a" stroke-width="2.5"/>
-  <text x="292" y="444" text-anchor="middle" font-size="13" font-weight="700" fill="#14707a" transform="rotate(-90 292 448)">PLEXO LOMBAR</text>
-  <text x="292" y="461" text-anchor="middle" font-size="10" fill="#5a7a82" transform="rotate(-90 292 448)">no psoas maior</text>
-  <rect x="232" y="715" width="120" height="498" rx="22" fill="#5a189a" fill-opacity="0.07" stroke="#5a189a" stroke-width="2.5"/>
-  <text x="292" y="960" text-anchor="middle" font-size="13" font-weight="700" fill="#5a189a" transform="rotate(-90 292 964)">PLEXO SAGRADO</text>
-  <text x="292" y="977" text-anchor="middle" font-size="10" fill="#5a7a82" transform="rotate(-90 292 964)">no piriforme</text>
-  <rect x="228" y="663" width="128" height="38" rx="19" fill="#ffffff" stroke="#5a7a82" stroke-width="3" stroke-dasharray="6,3"/>
-  <text x="292" y="680" text-anchor="middle" font-size="10.5" font-weight="700" fill="#5a7a82">TRONCO</text>
-  <text x="292" y="693" text-anchor="middle" font-size="9" font-weight="700" fill="#5a7a82">LOMBOSSAGRADO (L4–L5)</text>
+  <path d="M 352 534 C 452 534, 452 300, 552 300" class="path-main" stroke="#6a8532" stroke-width="5"/>
 
-  <path d="M 352 448 C 454 448, 454 300, 555 300" class="path-main" stroke="#6a8532" stroke-width="5"/>
+  <rect x="552" y="283" width="220" height="34" rx="17" fill="#ffffff" stroke="#6a8532" stroke-width="3"/>
+  <text x="662" y="304" text-anchor="middle" font-size="12.5" font-weight="700" fill="#6a8532">Iliohypogastric n.</text>
+  <text x="662" y="330" text-anchor="middle" class="lbl-minor">(T12–L1)</text>
 
-  <rect x="555" y="283" width="210" height="34" rx="17" fill="#ffffff" stroke="#6a8532" stroke-width="3"/>
-  <text x="660" y="304" text-anchor="middle" font-size="12.5" font-weight="700" fill="#6a8532">N. ÍLIO-HIPOGÁSTRICO</text>
-  <text x="660" y="330" text-anchor="middle" class="lbl-minor">(T12–L1)</text>
+  <path d="M 772 300 C 881 300, 881 284, 990 284" class="path-branch" stroke="#6a8532" stroke-width="2.5"/>
+  <circle cx="990" cy="284" r="5" fill="#ffffff" stroke="#6a8532" stroke-width="2.5"/>
+  <text x="1000" y="288" class="lbl-small">Lateral cutaneous br. → lateral gluteal skin</text>
 
-  <path d="M 765 300 C 868 300, 868 286, 970 286" class="path-branch" stroke="#6a8532" stroke-width="2.5"/>
-  <circle cx="970" cy="286" r="5" fill="#ffffff" stroke="#6a8532" stroke-width="2.5"/>
-  <text x="980" y="290" class="lbl-small">Ramo cutâneo lateral → região glútea lateral</text>
+  <path d="M 772 300 C 881 300, 881 316, 990 316" class="path-branch" stroke="#6a8532" stroke-width="2.5"/>
+  <circle cx="990" cy="316" r="5" fill="#ffffff" stroke="#6a8532" stroke-width="2.5"/>
+  <text x="1000" y="320" class="lbl-small">Anterior cutaneous br. → suprapubic skin</text>
 
-  <path d="M 765 300 C 868 300, 868 314, 970 314" class="path-branch" stroke="#6a8532" stroke-width="2.5"/>
-  <circle cx="970" cy="314" r="5" fill="#ffffff" stroke="#6a8532" stroke-width="2.5"/>
-  <text x="980" y="318" class="lbl-small">Ramo cutâneo anterior → região suprapúbica</text>
+  <path d="M 352 534 C 452 534, 452 362, 552 362" class="path-main" stroke="#6a8532" stroke-width="5"/>
 
-  <path d="M 352 448 C 454 448, 454 372, 555 372" class="path-main" stroke="#6a8532" stroke-width="5"/>
+  <rect x="552" y="345" width="220" height="34" rx="17" fill="#ffffff" stroke="#6a8532" stroke-width="3"/>
+  <text x="662" y="366" text-anchor="middle" font-size="12.5" font-weight="700" fill="#6a8532">Ilioinguinal n.</text>
+  <text x="662" y="392" text-anchor="middle" class="lbl-minor">(L1)</text>
 
-  <rect x="555" y="355" width="210" height="34" rx="17" fill="#ffffff" stroke="#6a8532" stroke-width="3"/>
-  <text x="660" y="376" text-anchor="middle" font-size="12.5" font-weight="700" fill="#6a8532">N. ILIOINGUINAL</text>
-  <text x="660" y="402" text-anchor="middle" class="lbl-minor">(L1)</text>
+  <path d="M 772 362 C 881 362, 881 362, 990 362" class="path-branch" stroke="#6a8532" stroke-width="2.5"/>
+  <circle cx="990" cy="362" r="5" fill="#ffffff" stroke="#6a8532" stroke-width="2.5"/>
+  <text x="1000" y="366" class="lbl-small">Inguinal skin; anterior scrotal / labial skin</text>
 
-  <path d="M 765 372 C 868 372, 868 358, 970 358" class="path-branch" stroke="#6a8532" stroke-width="2.5"/>
-  <circle cx="970" cy="358" r="5" fill="#ffffff" stroke="#6a8532" stroke-width="2.5"/>
-  <text x="980" y="362" class="lbl-small">Pele inguinal, raiz do pénis / monte púbico</text>
+  <path d="M 352 534 C 452 534, 452 428, 552 428" class="path-main" stroke="#b58900" stroke-width="5"/>
 
-  <path d="M 765 372 C 868 372, 868 386, 970 386" class="path-branch" stroke="#6a8532" stroke-width="2.5"/>
-  <circle cx="970" cy="386" r="5" fill="#ffffff" stroke="#6a8532" stroke-width="2.5"/>
-  <text x="980" y="390" class="lbl-small">Porção anterior do escroto / grande lábio</text>
+  <rect x="552" y="411" width="220" height="34" rx="17" fill="#ffffff" stroke="#b58900" stroke-width="3"/>
+  <text x="662" y="432" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b58900">Genitofemoral n.</text>
+  <text x="662" y="458" text-anchor="middle" class="lbl-minor">(L1–L2)</text>
 
-  <path d="M 352 448 C 454 448, 454 444, 555 444" class="path-main" stroke="#b58900" stroke-width="5"/>
+  <path d="M 772 428 C 881 428, 881 412, 990 412" class="path-branch" stroke="#b58900" stroke-width="2.5"/>
+  <circle cx="990" cy="412" r="5" fill="#ffffff" stroke="#b58900" stroke-width="2.5"/>
+  <text x="1000" y="416" class="lbl-bold">Genital br. → cremaster; scrotal / labial skin</text>
 
-  <rect x="555" y="427" width="210" height="34" rx="17" fill="#ffffff" stroke="#b58900" stroke-width="3"/>
-  <text x="660" y="448" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b58900">N. GENITOFEMORAL</text>
-  <text x="660" y="474" text-anchor="middle" class="lbl-minor">(L1–L2)</text>
+  <path d="M 772 428 C 881 428, 881 444, 990 444" class="path-branch" stroke="#b58900" stroke-width="2.5"/>
+  <circle cx="990" cy="444" r="5" fill="#ffffff" stroke="#b58900" stroke-width="2.5"/>
+  <text x="1000" y="448" class="lbl-bold">Femoral br. → skin over femoral triangle</text>
 
-  <path d="M 765 444 C 868 444, 868 430, 970 430" class="path-branch" stroke="#b58900" stroke-width="2.5"/>
-  <circle cx="970" cy="430" r="5" fill="#ffffff" stroke="#b58900" stroke-width="2.5"/>
-  <text x="980" y="434" class="lbl-bold">Ramo genital → cremaster, escroto / grande lábio</text>
+  <path d="M 352 534 C 452 534, 452 512, 552 512" class="path-main" stroke="#d62976" stroke-width="5"/>
 
-  <path d="M 765 444 C 868 444, 868 458, 970 458" class="path-branch" stroke="#b58900" stroke-width="2.5"/>
-  <circle cx="970" cy="458" r="5" fill="#ffffff" stroke="#b58900" stroke-width="2.5"/>
-  <text x="980" y="462" class="lbl-bold">Ramo femoral → pele do triângulo femoral</text>
+  <rect x="552" y="495" width="220" height="34" rx="17" fill="#ffffff" stroke="#d62976" stroke-width="3"/>
+  <text x="662" y="516" text-anchor="middle" font-size="12.5" font-weight="700" fill="#d62976">Lateral cutaneous n. of thigh</text>
+  <text x="662" y="542" text-anchor="middle" class="lbl-minor">(L2–L3) · <tspan fill='#c2407a' font-weight='700'>sensory</tspan></text>
 
-  <path d="M 352 448 C 454 448, 454 522, 555 522" class="path-main" stroke="#d62976" stroke-width="5"/>
+  <path d="M 772 512 C 881 512, 881 496, 990 496" class="path-branch" stroke="#d62976" stroke-width="2.5"/>
+  <circle cx="990" cy="496" r="5" fill="#ffffff" stroke="#d62976" stroke-width="2.5"/>
+  <text x="1000" y="500" class="lbl-small">Anterior br. → anterolateral thigh to knee</text>
 
-  <rect x="555" y="505" width="210" height="34" rx="17" fill="#ffffff" stroke="#d62976" stroke-width="3"/>
-  <text x="660" y="526" text-anchor="middle" font-size="12.5" font-weight="700" fill="#d62976">N. CUTÂNEO FEMORAL LAT.</text>
-  <text x="660" y="552" text-anchor="middle" class="lbl-minor">(L2–L3) · <tspan fill='#c2407a' font-weight='700'>sensitivo</tspan></text>
+  <path d="M 772 512 C 881 512, 881 528, 990 528" class="path-branch" stroke="#d62976" stroke-width="2.5"/>
+  <circle cx="990" cy="528" r="5" fill="#ffffff" stroke="#d62976" stroke-width="2.5"/>
+  <text x="1000" y="532" class="lbl-small">Posterior br. → lateral thigh, greater trochanter</text>
 
-  <path d="M 765 522 C 868 522, 868 508, 970 508" class="path-branch" stroke="#d62976" stroke-width="2.5"/>
-  <circle cx="970" cy="508" r="5" fill="#ffffff" stroke="#d62976" stroke-width="2.5"/>
-  <text x="980" y="512" class="lbl-small">Sensitivo → face lateral da coxa (até ao joelho)</text>
+  <path d="M 352 534 C 452 534, 452 905, 552 905" class="path-main" stroke="#2a9d5f" stroke-width="5"/>
 
-  <path d="M 765 522 C 868 522, 868 536, 970 536" class="path-branch" stroke="#d62976" stroke-width="2.5"/>
-  <circle cx="970" cy="536" r="5" fill="#ffffff" stroke="#d62976" stroke-width="2.5"/>
-  <text x="980" y="540" class="lbl-small">Compressão sob lig. inguinal = meralgia parestésica</text>
+  <rect x="552" y="888" width="220" height="34" rx="17" fill="#ffffff" stroke="#2a9d5f" stroke-width="3"/>
+  <text x="662" y="909" text-anchor="middle" font-size="12.5" font-weight="700" fill="#2a9d5f">Obturator n.</text>
+  <text x="662" y="935" text-anchor="middle" class="lbl-minor">(L2–L4, anterior divs.)</text>
 
-  <path d="M 352 448 C 454 448, 454 612, 555 612" class="path-main" stroke="#023e8a" stroke-width="7"/>
+  <path d="M 772 905 C 881 905, 881 873, 990 873" class="path-branch" stroke="#2a9d5f" stroke-width="2.5"/>
+  <circle cx="990" cy="873" r="5" fill="#ffffff" stroke="#2a9d5f" stroke-width="2.5"/>
+  <text x="1000" y="877" class="lbl-bold">Anterior br. → add. longus/brevis, gracilis; medial thigh skin</text>
 
-  <rect x="555" y="595" width="210" height="34" rx="17" fill="#ffffff" stroke="#023e8a" stroke-width="3.5"/>
-  <text x="660" y="616" text-anchor="middle" font-size="13.5" font-weight="700" fill="#023e8a">N. FEMORAL</text>
-  <text x="660" y="642" text-anchor="middle" class="lbl-minor">(L2–L4, ramos post.)</text>
+  <path d="M 772 905 C 881 905, 881 905, 990 905" class="path-branch" stroke="#2a9d5f" stroke-width="2.5"/>
+  <circle cx="990" cy="905" r="5" fill="#ffffff" stroke="#2a9d5f" stroke-width="2.5"/>
+  <text x="1000" y="909" class="lbl-bold">Posterior br. → adductor magnus, obturator externus; genicular br. (knee)</text>
 
-  <path d="M 765 612 C 868 612, 868 584, 970 584" class="path-branch" stroke="#023e8a" stroke-width="2.5"/>
-  <circle cx="970" cy="584" r="5" fill="#ffffff" stroke="#023e8a" stroke-width="2.5"/>
-  <text x="980" y="588" class="lbl-small">Ramos musculares → quadricípite, sartório, pectíneo</text>
+  <path d="M 772 905 C 881 905, 881 937, 990 937" class="path-branch" stroke="#2a9d5f" stroke-width="2.5"/>
+  <circle cx="990" cy="937" r="5" fill="#ffffff" stroke="#2a9d5f" stroke-width="2.5"/>
+  <text x="1000" y="941" class="lbl-small">Accessory obturator n. (L3–L4) — variant 10–30%</text>
 
-  <path d="M 765 612 C 868 612, 868 612, 970 612" class="path-branch" stroke="#023e8a" stroke-width="2.5"/>
-  <circle cx="970" cy="612" r="5" fill="#ffffff" stroke="#023e8a" stroke-width="2.5"/>
-  <text x="980" y="616" class="lbl-small">Ramos cutâneos anteriores da coxa</text>
+  <path d="M 352 1202 C 452 1202, 452 1000, 552 1000" class="path-main" stroke="#9c6644" stroke-width="5"/>
 
-  <path d="M 765 612 C 868 612, 868 640, 970 640" class="path-branch" stroke="#023e8a" stroke-width="2.5"/>
-  <circle cx="970" cy="640" r="5" fill="#ffffff" stroke="#023e8a" stroke-width="2.5"/>
-  <text x="980" y="644" class="lbl-small">Ramos articulares → anca e joelho</text>
+  <rect x="552" y="983" width="220" height="34" rx="17" fill="#ffffff" stroke="#9c6644" stroke-width="3"/>
+  <text x="662" y="1004" text-anchor="middle" font-size="12.5" font-weight="700" fill="#9c6644">Superior gluteal n.</text>
+  <text x="662" y="1030" text-anchor="middle" class="lbl-minor">(L4–S1) · <tspan fill='#1a6fb0' font-weight='700'>motor</tspan></text>
 
-  <path d="M 352 448 C 454 448, 454 708, 555 708" class="path-main" stroke="#2a9d5f" stroke-width="5"/>
+  <path d="M 772 1000 C 881 1000, 881 984, 990 984" class="path-branch" stroke="#9c6644" stroke-width="2.5"/>
+  <circle cx="990" cy="984" r="5" fill="#ffffff" stroke="#9c6644" stroke-width="2.5"/>
+  <text x="1000" y="988" class="lbl-small">Gluteus medius / minimus, tensor fasciae latae</text>
 
-  <rect x="555" y="691" width="210" height="34" rx="17" fill="#ffffff" stroke="#2a9d5f" stroke-width="3"/>
-  <text x="660" y="712" text-anchor="middle" font-size="12.5" font-weight="700" fill="#2a9d5f">N. OBTURADOR</text>
-  <text x="660" y="738" text-anchor="middle" class="lbl-minor">(L2–L4, ramos ant.)</text>
+  <path d="M 772 1000 C 881 1000, 881 1016, 990 1016" class="path-branch" stroke="#9c6644" stroke-width="2.5"/>
+  <circle cx="990" cy="1016" r="5" fill="#ffffff" stroke="#9c6644" stroke-width="2.5"/>
+  <text x="1000" y="1020" class="lbl-small">Injury → Trendelenburg sign</text>
 
-  <path d="M 765 708 C 868 708, 868 680, 970 680" class="path-branch" stroke="#2a9d5f" stroke-width="2.5"/>
-  <circle cx="970" cy="680" r="5" fill="#ffffff" stroke="#2a9d5f" stroke-width="2.5"/>
-  <text x="980" y="684" class="lbl-bold">Ramo anterior → adutor longo/curto, grácil; pele medial</text>
+  <path d="M 352 1202 C 452 1202, 452 1062, 552 1062" class="path-main" stroke="#9c6644" stroke-width="5"/>
 
-  <path d="M 765 708 C 868 708, 868 708, 970 708" class="path-branch" stroke="#2a9d5f" stroke-width="2.5"/>
-  <circle cx="970" cy="708" r="5" fill="#ffffff" stroke="#2a9d5f" stroke-width="2.5"/>
-  <text x="980" y="712" class="lbl-bold">Ramo posterior → adutor magno; ramo articular do joelho</text>
+  <rect x="552" y="1045" width="220" height="34" rx="17" fill="#ffffff" stroke="#9c6644" stroke-width="3"/>
+  <text x="662" y="1066" text-anchor="middle" font-size="12.5" font-weight="700" fill="#9c6644">Inferior gluteal n.</text>
+  <text x="662" y="1092" text-anchor="middle" class="lbl-minor">(L5–S2) · <tspan fill='#1a6fb0' font-weight='700'>motor</tspan></text>
 
-  <path d="M 765 708 C 868 708, 868 736, 970 736" class="path-branch" stroke="#2a9d5f" stroke-width="2.5"/>
-  <circle cx="970" cy="736" r="5" fill="#ffffff" stroke="#2a9d5f" stroke-width="2.5"/>
-  <text x="980" y="740" class="lbl-small">N. obturador acessório (L3–L4) — variante 10–30%</text>
+  <path d="M 772 1062 C 881 1062, 881 1062, 990 1062" class="path-branch" stroke="#9c6644" stroke-width="2.5"/>
+  <circle cx="990" cy="1062" r="5" fill="#ffffff" stroke="#9c6644" stroke-width="2.5"/>
+  <text x="1000" y="1066" class="lbl-small">Gluteus maximus (hip extension)</text>
 
-  <path d="M 352 964 C 454 964, 454 800, 555 800" class="path-main" stroke="#9c6644" stroke-width="5"/>
+  <path d="M 352 1202 C 452 1202, 452 1126, 552 1126" class="path-main" stroke="#c2407a" stroke-width="5"/>
 
-  <rect x="555" y="783" width="210" height="34" rx="17" fill="#ffffff" stroke="#9c6644" stroke-width="3"/>
-  <text x="660" y="804" text-anchor="middle" font-size="12.5" font-weight="700" fill="#9c6644">N. GLÚTEO SUPERIOR</text>
-  <text x="660" y="830" text-anchor="middle" class="lbl-minor">(L4–S1) · <tspan fill='#1a6fb0' font-weight='700'>motor</tspan></text>
+  <rect x="552" y="1109" width="220" height="34" rx="17" fill="#ffffff" stroke="#c2407a" stroke-width="3"/>
+  <text x="662" y="1130" text-anchor="middle" font-size="12.5" font-weight="700" fill="#c2407a">Posterior cutaneous n. of thigh</text>
+  <text x="662" y="1156" text-anchor="middle" class="lbl-minor">(S1–S3) · <tspan fill='#c2407a' font-weight='700'>sensory</tspan></text>
 
-  <path d="M 765 800 C 868 800, 868 786, 970 786" class="path-branch" stroke="#9c6644" stroke-width="2.5"/>
-  <circle cx="970" cy="786" r="5" fill="#ffffff" stroke="#9c6644" stroke-width="2.5"/>
-  <text x="980" y="790" class="lbl-small">Glúteo médio, glúteo mínimo, tensor da fáscia lata</text>
+  <path d="M 772 1126 C 881 1126, 881 1110, 990 1110" class="path-branch" stroke="#c2407a" stroke-width="2.5"/>
+  <circle cx="990" cy="1110" r="5" fill="#ffffff" stroke="#c2407a" stroke-width="2.5"/>
+  <text x="1000" y="1114" class="lbl-small">Posterior thigh skin</text>
 
-  <path d="M 765 800 C 868 800, 868 814, 970 814" class="path-branch" stroke="#9c6644" stroke-width="2.5"/>
-  <circle cx="970" cy="814" r="5" fill="#ffffff" stroke="#9c6644" stroke-width="2.5"/>
-  <text x="980" y="818" class="lbl-small">Lesão → sinal de Trendelenburg</text>
+  <path d="M 772 1126 C 881 1126, 881 1142, 990 1142" class="path-branch" stroke="#c2407a" stroke-width="2.5"/>
+  <circle cx="990" cy="1142" r="5" fill="#ffffff" stroke="#c2407a" stroke-width="2.5"/>
+  <text x="1000" y="1146" class="lbl-small">Inferior cluneal nn. → lower gluteal skin</text>
 
-  <path d="M 352 964 C 454 964, 454 858, 555 858" class="path-main" stroke="#9c6644" stroke-width="5"/>
+  <path d="M 352 1202 C 452 1202, 452 1500, 552 1500" class="path-main" stroke="#7b5e1a" stroke-width="5"/>
 
-  <rect x="555" y="841" width="210" height="34" rx="17" fill="#ffffff" stroke="#9c6644" stroke-width="3"/>
-  <text x="660" y="862" text-anchor="middle" font-size="12.5" font-weight="700" fill="#9c6644">N. GLÚTEO INFERIOR</text>
-  <text x="660" y="888" text-anchor="middle" class="lbl-minor">(L5–S2) · <tspan fill='#1a6fb0' font-weight='700'>motor</tspan></text>
+  <rect x="552" y="1483" width="220" height="34" rx="17" fill="#ffffff" stroke="#7b5e1a" stroke-width="3"/>
+  <text x="662" y="1504" text-anchor="middle" font-size="12.5" font-weight="700" fill="#7b5e1a">Pudendal n.</text>
+  <text x="662" y="1530" text-anchor="middle" class="lbl-minor">(S2–S4)</text>
 
-  <path d="M 765 858 C 868 858, 868 858, 970 858" class="path-branch" stroke="#9c6644" stroke-width="2.5"/>
-  <circle cx="970" cy="858" r="5" fill="#ffffff" stroke="#9c6644" stroke-width="2.5"/>
-  <text x="980" y="862" class="lbl-small">Glúteo máximo (extensão da anca)</text>
+  <path d="M 772 1500 C 881 1500, 881 1468, 990 1468" class="path-branch" stroke="#7b5e1a" stroke-width="2.5"/>
+  <circle cx="990" cy="1468" r="5" fill="#ffffff" stroke="#7b5e1a" stroke-width="2.5"/>
+  <text x="1000" y="1472" class="lbl-small">Inferior rectal n. → external anal sphincter</text>
 
-  <path d="M 352 964 C 454 964, 454 918, 555 918" class="path-main" stroke="#c2407a" stroke-width="5"/>
+  <path d="M 772 1500 C 881 1500, 881 1500, 990 1500" class="path-branch" stroke="#7b5e1a" stroke-width="2.5"/>
+  <circle cx="990" cy="1500" r="5" fill="#ffffff" stroke="#7b5e1a" stroke-width="2.5"/>
+  <text x="1000" y="1504" class="lbl-small">Perineal n. → perineum, urethral sphincter</text>
 
-  <rect x="555" y="901" width="210" height="34" rx="17" fill="#ffffff" stroke="#c2407a" stroke-width="3"/>
-  <text x="660" y="922" text-anchor="middle" font-size="12.5" font-weight="700" fill="#c2407a">N. CUTÂNEO FEMORAL POST.</text>
-  <text x="660" y="948" text-anchor="middle" class="lbl-minor">(S1–S3) · <tspan fill='#c2407a' font-weight='700'>sensitivo</tspan></text>
+  <path d="M 772 1500 C 881 1500, 881 1532, 990 1532" class="path-branch" stroke="#7b5e1a" stroke-width="2.5"/>
+  <circle cx="990" cy="1532" r="5" fill="#ffffff" stroke="#7b5e1a" stroke-width="2.5"/>
+  <text x="1000" y="1536" class="lbl-bold">Dorsal n. of penis / clitoris</text>
 
-  <path d="M 765 918 C 868 918, 868 904, 970 904" class="path-branch" stroke="#c2407a" stroke-width="2.5"/>
-  <circle cx="970" cy="904" r="5" fill="#ffffff" stroke="#c2407a" stroke-width="2.5"/>
-  <text x="980" y="908" class="lbl-small">Sensitivo → face posterior da coxa</text>
+  <path d="M 352 534 C 452 534, 452 628, 552 628" class="path-main" stroke="#023e8a" stroke-width="8"/>
 
-  <path d="M 765 918 C 868 918, 868 932, 970 932" class="path-branch" stroke="#c2407a" stroke-width="2.5"/>
-  <circle cx="970" cy="932" r="5" fill="#ffffff" stroke="#c2407a" stroke-width="2.5"/>
-  <text x="980" y="936" class="lbl-small">Nervos clúnios inferiores → região glútea inferior</text>
+  <rect x="552" y="611" width="220" height="34" rx="17" fill="#ffffff" stroke="#023e8a" stroke-width="3.5"/>
+  <text x="662" y="632" text-anchor="middle" font-size="13.5" font-weight="700" fill="#023e8a">Femoral n.</text>
+  <text x="662" y="658" text-anchor="middle" class="lbl-minor">(L2–L4, posterior divs.)</text>
 
-  <path d="M 352 964 C 454 964, 454 1235, 555 1235" class="path-main" stroke="#7b5e1a" stroke-width="5"/>
+  <path d="M 772 628 C 881 628, 881 566, 990 566" class="path-branch" stroke="#023e8a" stroke-width="2.5"/>
+  <circle cx="990" cy="566" r="5" fill="#ffffff" stroke="#023e8a" stroke-width="2.5"/>
+  <text x="1000" y="570" class="lbl-small">Muscular brs. → quadriceps, sartorius, pectineus</text>
 
-  <rect x="555" y="1218" width="210" height="34" rx="17" fill="#ffffff" stroke="#7b5e1a" stroke-width="3"/>
-  <text x="660" y="1239" text-anchor="middle" font-size="12.5" font-weight="700" fill="#7b5e1a">N. PUDENDO</text>
-  <text x="660" y="1265" text-anchor="middle" class="lbl-minor">(S2–S4)</text>
+  <path d="M 772 628 C 881 628, 881 601, 990 601" class="path-branch" stroke="#023e8a" stroke-width="2.5"/>
+  <circle cx="990" cy="601" r="6" fill="#ffffff" stroke="#023e8a" stroke-width="2.5"/>
+  <text x="1000" y="605" class="lbl-bold">Anterior cutaneous nn. of thigh → anterior thigh skin</text>
 
-  <path d="M 765 1235 C 868 1235, 868 1207, 970 1207" class="path-branch" stroke="#7b5e1a" stroke-width="2.5"/>
-  <circle cx="970" cy="1207" r="5" fill="#ffffff" stroke="#7b5e1a" stroke-width="2.5"/>
-  <text x="980" y="1211" class="lbl-small">N. rectal inferior → esfíncter anal externo</text>
+  <path d="M 772 628 C 881 628, 881 636, 990 636" class="path-branch" stroke="#023e8a" stroke-width="2.5"/>
+  <circle cx="990" cy="636" r="5" fill="#ffffff" stroke="#023e8a" stroke-width="2.5"/>
+  <text x="1000" y="640" class="lbl-small">Articular brs. → hip &amp; knee</text>
 
-  <path d="M 765 1235 C 868 1235, 868 1235, 970 1235" class="path-branch" stroke="#7b5e1a" stroke-width="2.5"/>
-  <circle cx="970" cy="1235" r="5" fill="#ffffff" stroke="#7b5e1a" stroke-width="2.5"/>
-  <text x="980" y="1239" class="lbl-small">N. perineal → períneo, esfíncter uretral</text>
+  <path d="M 772 628 C 881 628, 881 724, 990 724" class="path-branch" stroke="#3a6ea5" stroke-width="2.5"/>
+  <circle cx="990" cy="724" r="5" fill="#ffffff" stroke="#3a6ea5" stroke-width="2.5"/>
+  <text x="1000" y="728" class="lbl-small">N. to vastus medialis (in adductor canal)</text>
 
-  <path d="M 765 1235 C 868 1235, 868 1263, 970 1263" class="path-branch" stroke="#7b5e1a" stroke-width="2.5"/>
-  <circle cx="970" cy="1263" r="5" fill="#ffffff" stroke="#7b5e1a" stroke-width="2.5"/>
-  <text x="980" y="1267" class="lbl-bold">N. dorsal do pénis / clítoris</text>
+  <path d="M 772 628 C 881 628, 881 782, 990 782" class="path-main" stroke="#0096c7" stroke-width="4"/>
 
-  <path d="M 352 964 C 454 964, 454 1000, 555 1000" class="path-main" stroke="#5a189a" stroke-width="9"/>
+  <rect x="990" y="765" width="260" height="34" rx="17" fill="#ffffff" stroke="#0096c7" stroke-width="3"/>
+  <text x="1120" y="786" text-anchor="middle" font-size="12.5" font-weight="700" fill="#0096c7">Saphenous n.</text>
+  <text x="1120" y="812" text-anchor="middle" class="lbl-minor">terminal sensory br. of femoral</text>
 
-  <rect x="555" y="983" width="210" height="34" rx="17" fill="#ffffff" stroke="#5a189a" stroke-width="3.5"/>
-  <text x="660" y="1004" text-anchor="middle" font-size="13.5" font-weight="700" fill="#5a189a">N. ISQUIÁTICO</text>
-  <text x="660" y="1030" text-anchor="middle" class="lbl-minor">(L4–S3) — maior nervo do corpo</text>
+  <path d="M 1250 782 C 1415 782, 1415 760, 1580 760" class="path-branch" stroke="#0096c7" stroke-width="2.5"/>
+  <circle cx="1580" cy="760" r="5" fill="#ffffff" stroke="#0096c7" stroke-width="2.5"/>
+  <text x="1590" y="764" class="lbl-bold">Infrapatellar br. → anterior knee skin</text>
 
-  <path d="M 765 1000 C 868 1000, 868 960, 970 960" class="path-main" stroke="#3a0ca3" stroke-width="6"/>
+  <path d="M 1250 782 C 1415 782, 1415 800, 1580 800" class="path-branch" stroke="#0096c7" stroke-width="2.5"/>
+  <circle cx="1580" cy="800" r="5" fill="#ffffff" stroke="#0096c7" stroke-width="2.5"/>
+  <text x="1590" y="804" class="lbl-bold">Sartorial / medial crural cutaneous brs.</text>
 
-  <rect x="970" y="943" width="250" height="34" rx="17" fill="#ffffff" stroke="#3a0ca3" stroke-width="3.5"/>
-  <text x="1095" y="964" text-anchor="middle" font-size="13.5" font-weight="700" fill="#3a0ca3">N. TIBIAL</text>
-  <text x="1095" y="990" text-anchor="middle" class="lbl-minor">(L4–S3)</text>
+  <path d="M 1250 782 C 1415 782, 1415 824, 1580 824" class="path-branch" stroke="#0096c7" stroke-width="2.5"/>
+  <circle cx="1580" cy="824" r="5" fill="#ffffff" stroke="#0096c7" stroke-width="2.5"/>
+  <text x="1590" y="828" class="lbl-small">→ medial leg &amp; foot, to medial malleolus</text>
 
-  <path d="M 765 1000 C 868 1000, 868 1075, 970 1075" class="path-main" stroke="#dc4900" stroke-width="6"/>
+  <path d="M 352 1202 C 452 1202, 452 1300, 552 1300" class="path-main" stroke="#5a189a" stroke-width="9"/>
 
-  <rect x="970" y="1058" width="250" height="34" rx="17" fill="#ffffff" stroke="#dc4900" stroke-width="3.5"/>
-  <text x="1095" y="1079" text-anchor="middle" font-size="13.5" font-weight="700" fill="#dc4900">N. FIBULAR COMUM</text>
-  <text x="1095" y="1105" text-anchor="middle" class="lbl-minor">(L4–S2)</text>
+  <rect x="552" y="1283" width="220" height="34" rx="17" fill="#ffffff" stroke="#5a189a" stroke-width="3.5"/>
+  <text x="662" y="1304" text-anchor="middle" font-size="13.5" font-weight="700" fill="#5a189a">Sciatic n.</text>
+  <text x="662" y="1330" text-anchor="middle" class="lbl-minor">(L4–S3) — largest nerve in the body</text>
 
-  <path d="M 1220 960 C 1370 960, 1370 905, 1520 905" class="path-branch" stroke="#3a0ca3" stroke-width="2.5"/>
-  <circle cx="1520" cy="905" r="5" fill="#ffffff" stroke="#3a0ca3" stroke-width="2.5"/>
-  <text x="1530" y="909" class="lbl-bold">N. plantar medial → intrínsecos + planta medial</text>
+  <path d="M 772 1300 C 881 1300, 881 1238, 990 1238" class="path-main" stroke="#3a0ca3" stroke-width="6"/>
 
-  <path d="M 1220 960 C 1370 960, 1370 935, 1520 935" class="path-branch" stroke="#3a0ca3" stroke-width="2.5"/>
-  <circle cx="1520" cy="935" r="5" fill="#ffffff" stroke="#3a0ca3" stroke-width="2.5"/>
-  <text x="1530" y="939" class="lbl-bold">N. plantar lateral → intrínsecos + planta lateral</text>
+  <rect x="990" y="1221" width="260" height="34" rx="17" fill="#ffffff" stroke="#3a0ca3" stroke-width="3.5"/>
+  <text x="1120" y="1242" text-anchor="middle" font-size="13.5" font-weight="700" fill="#3a0ca3">Tibial n.</text>
+  <text x="1120" y="1268" text-anchor="middle" class="lbl-minor">(L4–S3)</text>
 
-  <path d="M 1220 960 C 1370 960, 1370 965, 1520 965" class="path-branch" stroke="#3a0ca3" stroke-width="2.5"/>
-  <circle cx="1520" cy="965" r="5" fill="#ffffff" stroke="#3a0ca3" stroke-width="2.5"/>
-  <text x="1530" y="969" class="lbl-small">Ramo cutâneo sural medial</text>
+  <path d="M 772 1300 C 881 1300, 881 1402, 990 1402" class="path-main" stroke="#dc4900" stroke-width="6"/>
 
-  <path d="M 1220 960 C 1370 960, 1370 995, 1520 995" class="path-branch" stroke="#3a0ca3" stroke-width="2.5"/>
-  <circle cx="1520" cy="995" r="5" fill="#ffffff" stroke="#3a0ca3" stroke-width="2.5"/>
-  <text x="1530" y="999" class="lbl-small">Ramos musculares → compartimento post. da perna</text>
+  <rect x="990" y="1385" width="260" height="34" rx="17" fill="#ffffff" stroke="#dc4900" stroke-width="3.5"/>
+  <text x="1120" y="1406" text-anchor="middle" font-size="13.5" font-weight="700" fill="#dc4900">Common fibular n.</text>
+  <text x="1120" y="1432" text-anchor="middle" class="lbl-minor">(L4–S2)</text>
 
-  <path d="M 1220 1075 C 1370 1075, 1370 1065, 1520 1065" class="path-branch" stroke="#dc4900" stroke-width="2.5"/>
-  <circle cx="1520" cy="1065" r="5" fill="#ffffff" stroke="#dc4900" stroke-width="2.5"/>
-  <text x="1530" y="1069" class="lbl-bold">N. fibular superficial → eversores; dorso do pé</text>
+  <path d="M 1250 1238 C 1415 1238, 1415 1150, 1580 1150" class="path-branch" stroke="#3a0ca3" stroke-width="2.5"/>
+  <circle cx="1580" cy="1150" r="5" fill="#ffffff" stroke="#3a0ca3" stroke-width="2.5"/>
+  <text x="1590" y="1154" class="lbl-small">Muscular brs. → posterior compartment (gastroc., soleus…)</text>
 
-  <path d="M 1220 1075 C 1370 1075, 1370 1095, 1520 1095" class="path-branch" stroke="#dc4900" stroke-width="2.5"/>
-  <circle cx="1520" cy="1095" r="5" fill="#ffffff" stroke="#dc4900" stroke-width="2.5"/>
-  <text x="1530" y="1099" class="lbl-bold">N. fibular profundo → dorsiflexores; 1º espaço interdigital</text>
+  <path d="M 1250 1238 C 1415 1238, 1415 1182, 1580 1182" class="path-branch" stroke="#3a0ca3" stroke-width="2.5"/>
+  <circle cx="1580" cy="1182" r="5" fill="#ffffff" stroke="#3a0ca3" stroke-width="2.5"/>
+  <text x="1590" y="1186" class="lbl-small">Genicular (articular) brs. → knee</text>
 
-  <path d="M 1220 1075 C 1370 1075, 1370 1125, 1520 1125" class="path-branch" stroke="#dc4900" stroke-width="2.5"/>
-  <circle cx="1520" cy="1125" r="5" fill="#ffffff" stroke="#dc4900" stroke-width="2.5"/>
-  <text x="1530" y="1129" class="lbl-small">Ramo cutâneo sural lateral</text>
+  <path d="M 1250 1238 C 1415 1238, 1415 1216, 1580 1216" class="path-branch" stroke="#3a0ca3" stroke-width="2.5"/>
+  <circle cx="1580" cy="1216" r="5" fill="#ffffff" stroke="#3a0ca3" stroke-width="2.5"/>
+  <text x="1590" y="1220" class="lbl-bold">Medial sural cutaneous n.</text>
 
-  <path d="M 1528 965 C 1600 965, 1630 1300, 1708 1300" class="path-branch" stroke="#9d4edd" stroke-dasharray="5,4"/>
-  <path d="M 1528 1125 C 1600 1125, 1630 1300, 1708 1300" class="path-branch" stroke="#9d4edd" stroke-dasharray="5,4"/>
+  <path d="M 1250 1238 C 1415 1238, 1415 1248, 1580 1248" class="path-branch" stroke="#3a0ca3" stroke-width="2.5"/>
+  <circle cx="1580" cy="1248" r="5" fill="#ffffff" stroke="#3a0ca3" stroke-width="2.5"/>
+  <text x="1590" y="1252" class="lbl-small">Medial calcaneal br. → heel</text>
 
-  <circle cx="1720" cy="1300" r="6" fill="#ffffff" stroke="#9d4edd" stroke-width="2.5"/>
-  <text x="1732" y="1304" class="lbl-bold">N. SURAL → bordo lateral do pé e 5º dedo</text>
-  <text x="1732" y="1319" class="lbl-small-i">sensitivo · convergência: sural medial [tibial] + lateral [fibular]</text>
+  <path d="M 1250 1238 C 1415 1238, 1415 1282, 1580 1282" class="path-branch" stroke="#3a0ca3" stroke-width="2.5"/>
+  <circle cx="1580" cy="1282" r="5" fill="#ffffff" stroke="#3a0ca3" stroke-width="2.5"/>
+  <text x="1590" y="1286" class="lbl-bold">Medial plantar n. → medial sole + 3½ toes</text>
 
-  <path d="M 765 612 C 868 612, 868 525, 970 525" class="path-main" stroke="#0096c7" stroke-width="4"/>
+  <path d="M 1250 1238 C 1415 1238, 1415 1314, 1580 1314" class="path-branch" stroke="#3a0ca3" stroke-width="2.5"/>
+  <circle cx="1580" cy="1314" r="5" fill="#ffffff" stroke="#3a0ca3" stroke-width="2.5"/>
+  <text x="1590" y="1318" class="lbl-bold">Lateral plantar n. → lateral sole + intrinsics</text>
 
-  <rect x="970" y="508" width="250" height="34" rx="17" fill="#ffffff" stroke="#0096c7" stroke-width="3"/>
-  <text x="1095" y="529" text-anchor="middle" font-size="12.5" font-weight="700" fill="#0096c7">N. SAFENO</text>
-  <text x="1095" y="555" text-anchor="middle" class="lbl-minor">terminal do femoral · <tspan fill='#c2407a' font-weight='700'>sensitivo</tspan></text>
+  <path d="M 1250 1402 C 1415 1402, 1415 1387, 1580 1387" class="path-branch" stroke="#dc4900" stroke-width="2.5"/>
+  <circle cx="1580" cy="1387" r="5" fill="#ffffff" stroke="#dc4900" stroke-width="2.5"/>
+  <text x="1590" y="1391" class="lbl-small">Lateral sural cutaneous n. (+ communicating br.)</text>
 
-  <circle cx="1520" cy="525" r="5" fill="#ffffff" stroke="#0096c7" stroke-width="2.5"/>
-  <path d="M 1220 525 C 1370 525, 1370 525, 1520 525" class="path-branch" stroke="#0096c7" stroke-width="2.5"/>
-  <text x="1530" y="529" class="lbl-small">Face medial da perna e do pé → maléolo medial</text>
+  <path d="M 1250 1402 C 1415 1402, 1415 1420, 1580 1420" class="path-branch" stroke="#dc4900" stroke-width="2.5"/>
+  <circle cx="1580" cy="1420" r="5" fill="#ffffff" stroke="#dc4900" stroke-width="2.5"/>
+  <text x="1590" y="1424" class="lbl-bold">Superficial fibular n. → fibularis l./b.; dorsum of foot</text>
+
+  <path d="M 1250 1402 C 1415 1402, 1415 1453, 1580 1453" class="path-branch" stroke="#dc4900" stroke-width="2.5"/>
+  <circle cx="1580" cy="1453" r="5" fill="#ffffff" stroke="#dc4900" stroke-width="2.5"/>
+  <text x="1590" y="1457" class="lbl-bold">Deep fibular n. → anterior compartment; 1st web space</text>
+
+  <path d="M 1588 1216 C 1680 1216, 1720 1520, 1798 1520" class="path-branch" stroke="#9d4edd" stroke-dasharray="5,4"/>
+  <path d="M 1588 1387 C 1680 1387, 1720 1520, 1798 1520" class="path-branch" stroke="#9d4edd" stroke-dasharray="5,4"/>
+
+  <circle cx="1810" cy="1520" r="6" fill="#ffffff" stroke="#9d4edd" stroke-width="2.5"/>
+  <text x="1822" y="1524" class="lbl-bold">Sural n. → lateral foot, 5th toe, lateral malleolus</text>
+  <text x="1822" y="1539" class="lbl-small-i">convergence: medial sural [tibial] + communicating [fibular]</text>
 
   <g>
-  <circle cx="110" cy="225" r="14" fill="#ffffff" stroke="#e8a44a" stroke-width="3"/>
-  <text x="110" y="231" text-anchor="middle" font-size="13" font-weight="700" fill="#e8a44a">T12</text>
-  <text x="110" y="255" text-anchor="middle" class="lbl-minor" fill="#e8a44a">(subcostal)</text>
-  <path d="M 110 239 C 110 262, 110 270, 110 268" fill="none" stroke="#e8a44a" stroke-width="2" stroke-dasharray="4,3"/>
-  <circle cx="110" cy="285" r="17" fill="#ffffff" stroke="#5a7a82" stroke-width="3"/>
-  <text x="110" y="291" text-anchor="middle" class="lbl-root">L1</text>
-  <circle cx="110" cy="396" r="17" fill="#ffffff" stroke="#5a7a82" stroke-width="3"/>
-  <text x="110" y="402" text-anchor="middle" class="lbl-root">L2</text>
-  <circle cx="110" cy="508" r="17" fill="#ffffff" stroke="#5a7a82" stroke-width="3"/>
-  <text x="110" y="514" text-anchor="middle" class="lbl-root">L3</text>
-  <circle cx="110" cy="619" r="17" fill="#ffffff" stroke="#5a7a82" stroke-width="3"/>
-  <text x="110" y="625" text-anchor="middle" class="lbl-root">L4</text>
-  <circle cx="110" cy="730" r="17" fill="#ffffff" stroke="#5a7a82" stroke-width="3"/>
-  <text x="110" y="736" text-anchor="middle" class="lbl-root">L5</text>
-  <circle cx="110" cy="841" r="17" fill="#ffffff" stroke="#5a7a82" stroke-width="3"/>
-  <text x="110" y="847" text-anchor="middle" class="lbl-root">S1</text>
-  <circle cx="110" cy="952" r="17" fill="#ffffff" stroke="#5a7a82" stroke-width="3"/>
-  <text x="110" y="958" text-anchor="middle" class="lbl-root">S2</text>
-  <circle cx="110" cy="1064" r="17" fill="#ffffff" stroke="#5a7a82" stroke-width="3"/>
-  <text x="110" y="1070" text-anchor="middle" class="lbl-root">S3</text>
-  <circle cx="110" cy="1175" r="17" fill="#ffffff" stroke="#5a7a82" stroke-width="3"/>
-  <text x="110" y="1181" text-anchor="middle" class="lbl-root">S4</text>
+  <circle cx="110" cy="258" r="14" fill="#ffffff" stroke="#e8a44a" stroke-width="3"/>
+  <text x="110" y="264" text-anchor="middle" font-size="13" font-weight="700" fill="#e8a44a">T12</text>
+  <text x="110" y="288" text-anchor="middle" class="lbl-minor" fill="#e8a44a">(subcostal)</text>
+  <path d="M 110 272 C 110 294, 110 300, 110 303" fill="none" stroke="#e8a44a" stroke-width="2" stroke-dasharray="4,3"/>
+  <circle cx="110" cy="320" r="17" fill="#ffffff" stroke="#5a7a82" stroke-width="3"/>
+  <text x="110" y="326" text-anchor="middle" class="lbl-root">L1</text>
+  <circle cx="110" cy="465" r="17" fill="#ffffff" stroke="#5a7a82" stroke-width="3"/>
+  <text x="110" y="471" text-anchor="middle" class="lbl-root">L2</text>
+  <circle cx="110" cy="610" r="17" fill="#ffffff" stroke="#5a7a82" stroke-width="3"/>
+  <text x="110" y="616" text-anchor="middle" class="lbl-root">L3</text>
+  <circle cx="110" cy="755" r="17" fill="#ffffff" stroke="#5a7a82" stroke-width="3"/>
+  <text x="110" y="761" text-anchor="middle" class="lbl-root">L4</text>
+  <circle cx="110" cy="900" r="17" fill="#ffffff" stroke="#5a7a82" stroke-width="3"/>
+  <text x="110" y="906" text-anchor="middle" class="lbl-root">L5</text>
+  <circle cx="110" cy="1045" r="17" fill="#ffffff" stroke="#5a7a82" stroke-width="3"/>
+  <text x="110" y="1051" text-anchor="middle" class="lbl-root">S1</text>
+  <circle cx="110" cy="1190" r="17" fill="#ffffff" stroke="#5a7a82" stroke-width="3"/>
+  <text x="110" y="1196" text-anchor="middle" class="lbl-root">S2</text>
+  <circle cx="110" cy="1335" r="17" fill="#ffffff" stroke="#5a7a82" stroke-width="3"/>
+  <text x="110" y="1341" text-anchor="middle" class="lbl-root">S3</text>
+  <circle cx="110" cy="1480" r="17" fill="#ffffff" stroke="#5a7a82" stroke-width="3"/>
+  <text x="110" y="1486" text-anchor="middle" class="lbl-root">S4</text>
   </g>
-
     <g class="block-overlay-boxes-above">
-    <g id="block-tapsub-boxes" data-block="tapsub">
-      <rect x="90" y="206" width="690" height="116" rx="12" fill="#FB8500" fill-opacity="0.06" stroke="#FB8500" stroke-width="3" stroke-dasharray="8,4"/>
-    </g>
-    <g id="block-taplat-boxes" data-block="taplat">
-      <rect x="545" y="278" width="475" height="118" rx="12" fill="#F77F00" fill-opacity="0.07" stroke="#F77F00" stroke-width="3" stroke-dasharray="8,4"/>
-    </g>
-    <g id="block-tappost-boxes" data-block="tappost">
-      <rect x="360" y="284" width="300" height="112" rx="12" fill="#E85D04" fill-opacity="0.07" stroke="#E85D04" stroke-width="3" stroke-dasharray="8,4"/>
-    </g>
-    <g id="block-rectus-boxes" data-block="rectus">
-      <rect x="950" y="298" width="560" height="94" rx="12" fill="#DDA15E" fill-opacity="0.08" stroke="#DDA15E" stroke-width="3" stroke-dasharray="8,4"/>
-    </g>
     <g id="block-iihg-boxes" data-block="iihg">
-      <rect x="548" y="279" width="228" height="116" rx="12" fill="#BC6C25" fill-opacity="0.09" stroke="#BC6C25" stroke-width="3" stroke-dasharray="8,4"/>
+      <rect x="548" y="280" width="230" height="100" rx="12" fill="#BC6C25" fill-opacity="0.09" stroke="#BC6C25" stroke-width="3" stroke-dasharray="8,4"/>
     </g>
     <g id="block-ql1-boxes" data-block="ql1">
-      <rect x="196" y="250" width="168" height="210" rx="12" fill="#D62976" fill-opacity="0.07" stroke="#D62976" stroke-width="3" stroke-dasharray="8,4"/>
+      <rect x="196" y="300" width="168" height="232" rx="12" fill="#D62976" fill-opacity="0.07" stroke="#D62976" stroke-width="3" stroke-dasharray="8,4"/>
     </g>
     <g id="block-ql2-boxes" data-block="ql2">
-      <rect x="85" y="256" width="278" height="256" rx="12" fill="#B5179E" fill-opacity="0.06" stroke="#B5179E" stroke-width="3" stroke-dasharray="8,4"/>
+      <rect x="85" y="305" width="280" height="268" rx="12" fill="#B5179E" fill-opacity="0.06" stroke="#B5179E" stroke-width="3" stroke-dasharray="8,4"/>
     </g>
     <g id="block-ql3-boxes" data-block="ql3">
-      <rect x="224" y="246" width="140" height="392" rx="12" fill="#7B2CBF" fill-opacity="0.07" stroke="#7B2CBF" stroke-width="3" stroke-dasharray="8,4"/>
+      <rect x="224" y="284" width="140" height="507" rx="12" fill="#7B2CBF" fill-opacity="0.07" stroke="#7B2CBF" stroke-width="3" stroke-dasharray="8,4"/>
     </g>
     <g id="block-esp-boxes" data-block="esp">
-      <rect x="84" y="270" width="128" height="362" rx="12" fill="#5A189A" fill-opacity="0.07" stroke="#5A189A" stroke-width="3" stroke-dasharray="8,4"/>
+      <rect x="84" y="300" width="130" height="472" rx="12" fill="#5A189A" fill-opacity="0.07" stroke="#5A189A" stroke-width="3" stroke-dasharray="8,4"/>
     </g>
     <g id="block-lpb-boxes" data-block="lpb">
-      <rect x="220" y="244" width="144" height="394" rx="12" fill="#023E8A" fill-opacity="0.06" stroke="#023E8A" stroke-width="3" stroke-dasharray="8,4"/>
+      <rect x="220" y="282" width="144" height="509" rx="12" fill="#023E8A" fill-opacity="0.06" stroke="#023E8A" stroke-width="3" stroke-dasharray="8,4"/>
     </g>
     <g id="block-peng-boxes" data-block="peng">
-      <rect x="948" y="626" width="300" height="128" rx="12" fill="#0096C7" fill-opacity="0.08" stroke="#0096C7" stroke-width="3" stroke-dasharray="8,4"/>
-    </g>
-    <g id="block-fnb-boxes" data-block="fnb">
-      <rect x="548" y="593" width="228" height="42" rx="12" fill="#0077B6" fill-opacity="0.1" stroke="#0077B6" stroke-width="3" stroke-dasharray="8,4"/>
-    </g>
-    <g id="block-fics-boxes" data-block="fics">
-      <rect x="548" y="500" width="228" height="232" rx="12" fill="#00B4D8" fill-opacity="0.06" stroke="#00B4D8" stroke-width="3" stroke-dasharray="8,4"/>
-    </g>
-    <g id="block-fici-boxes" data-block="fici">
-      <rect x="552" y="503" width="221" height="134" rx="12" fill="#48CAE4" fill-opacity="0.07" stroke="#48CAE4" stroke-width="3" stroke-dasharray="8,4"/>
-    </g>
-    <g id="block-acb-boxes" data-block="acb">
-      <rect x="965" y="506" width="260" height="40" rx="12" fill="#2A9D8F" fill-opacity="0.1" stroke="#2A9D8F" stroke-width="3" stroke-dasharray="8,4"/>
-    </g>
-    <g id="block-lfcb-boxes" data-block="lfcb">
-      <rect x="550" y="505" width="228" height="38" rx="12" fill="#52B788" fill-opacity="0.11" stroke="#52B788" stroke-width="3" stroke-dasharray="8,4"/>
-    </g>
-    <g id="block-obtb-boxes" data-block="obtb">
-      <rect x="550" y="691" width="228" height="42" rx="12" fill="#2D6A4F" fill-opacity="0.1" stroke="#2D6A4F" stroke-width="3" stroke-dasharray="8,4"/>
-    </g>
-    <g id="block-pfcb-boxes" data-block="pfcb">
-      <rect x="550" y="901" width="228" height="38" rx="12" fill="#74C69D" fill-opacity="0.11" stroke="#74C69D" stroke-width="3" stroke-dasharray="8,4"/>
-    </g>
-    <g id="block-subg-boxes" data-block="subg">
-      <rect x="548" y="898" width="228" height="122" rx="12" fill="#6A0DAD" fill-opacity="0.07" stroke="#6A0DAD" stroke-width="3" stroke-dasharray="8,4"/>
-    </g>
-    <g id="block-antsci-boxes" data-block="antsci">
-      <rect x="552" y="985" width="221" height="36" rx="12" fill="#9D4EDD" fill-opacity="0.1" stroke="#9D4EDD" stroke-width="3" stroke-dasharray="8,4"/>
-    </g>
-    <g id="block-pop-boxes" data-block="pop">
-      <rect x="965" y="940" width="260" height="160" rx="12" fill="#C71585" fill-opacity="0.07" stroke="#C71585" stroke-width="3" stroke-dasharray="8,4"/>
-    </g>
-    <g id="block-ipack-boxes" data-block="ipack">
-      <rect x="968" y="946" width="254" height="34" rx="12" fill="#FF5C8A" fill-opacity="0.12" stroke="#FF5C8A" stroke-width="3" stroke-dasharray="8,4"/>
+      <rect x="972" y="624" width="300" height="26" rx="12" fill="#0096C7" fill-opacity="0.1" stroke="#0096C7" stroke-width="3" stroke-dasharray="8,4"/>
+      <rect x="972" y="858" width="330" height="92" rx="12" fill="#0096C7" fill-opacity="0.1" stroke="#0096C7" stroke-width="3" stroke-dasharray="8,4"/>
+      <line x1="1122" y1="650" x2="1122" y2="858" stroke="#0096C7" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
     </g>
     <g id="block-pudb-boxes" data-block="pudb">
-      <rect x="550" y="1216" width="228" height="42" rx="12" fill="#7B5E1A" fill-opacity="0.1" stroke="#7B5E1A" stroke-width="3" stroke-dasharray="8,4"/>
+      <rect x="548" y="1481" width="230" height="40" rx="12" fill="#7B5E1A" fill-opacity="0.1" stroke="#7B5E1A" stroke-width="3" stroke-dasharray="8,4"/>
+    </g>
+    <g id="block-fnb-boxes" data-block="fnb">
+      <rect x="548" y="609" width="230" height="40" rx="12" fill="#0077B6" fill-opacity="0.1" stroke="#0077B6" stroke-width="3" stroke-dasharray="8,4"/>
+    </g>
+    <g id="block-fics-boxes" data-block="fics">
+      <rect x="548" y="495" width="230" height="170" rx="12" fill="#00B4D8" fill-opacity="0.06" stroke="#00B4D8" stroke-width="3" stroke-dasharray="8,4"/>
+    </g>
+    <g id="block-fici-boxes" data-block="fici">
+      <rect x="552" y="498" width="222" height="160" rx="12" fill="#48CAE4" fill-opacity="0.07" stroke="#48CAE4" stroke-width="3" stroke-dasharray="8,4"/>
+    </g>
+    <g id="block-acb-boxes" data-block="acb">
+      <rect x="970" y="712" width="300" height="92" rx="12" fill="#2A9D8F" fill-opacity="0.09" stroke="#2A9D8F" stroke-width="3" stroke-dasharray="8,4"/>
+    </g>
+    <g id="block-actb-boxes" data-block="actb">
+      <rect x="970" y="589" width="330" height="26" rx="12" fill="#E0954A" fill-opacity="0.13" stroke="#E0954A" stroke-width="3" stroke-dasharray="8,4"/>
+    </g>
+    <g id="block-lcnt-boxes" data-block="lcnt">
+      <rect x="548" y="494" width="230" height="38" rx="12" fill="#52B788" fill-opacity="0.11" stroke="#52B788" stroke-width="3" stroke-dasharray="8,4"/>
+    </g>
+    <g id="block-obtb-boxes" data-block="obtb">
+      <rect x="548" y="886" width="230" height="40" rx="12" fill="#2D6A4F" fill-opacity="0.1" stroke="#2D6A4F" stroke-width="3" stroke-dasharray="8,4"/>
+    </g>
+    <g id="block-pfcb-boxes" data-block="pfcb">
+      <rect x="548" y="1107" width="230" height="40" rx="12" fill="#C2407A" fill-opacity="0.11" stroke="#C2407A" stroke-width="3" stroke-dasharray="8,4"/>
+    </g>
+    <g id="block-subg-boxes" data-block="subg">
+      <rect x="548" y="1105" width="230" height="212" rx="12" fill="#6A0DAD" fill-opacity="0.07" stroke="#6A0DAD" stroke-width="3" stroke-dasharray="8,4"/>
+    </g>
+    <g id="block-antsci-boxes" data-block="antsci">
+      <rect x="552" y="1285" width="222" height="34" rx="12" fill="#9D4EDD" fill-opacity="0.1" stroke="#9D4EDD" stroke-width="3" stroke-dasharray="8,4"/>
+    </g>
+    <g id="block-pop-boxes" data-block="pop">
+      <rect x="970" y="1216" width="300" height="212" rx="12" fill="#C71585" fill-opacity="0.07" stroke="#C71585" stroke-width="3" stroke-dasharray="8,4"/>
+    </g>
+    <g id="block-ipack-boxes" data-block="ipack">
+      <rect x="974" y="1220" width="292" height="36" rx="12" fill="#FF5C8A" fill-opacity="0.12" stroke="#FF5C8A" stroke-width="3" stroke-dasharray="8,4"/>
     </g>
     <g id="block-saphb-boxes" data-block="saphb">
-      <rect x="1500" y="508" width="400" height="34" rx="12" fill="#118AB2" fill-opacity="0.11" stroke="#118AB2" stroke-width="3" stroke-dasharray="8,4"/>
+      <rect x="1565" y="748" width="440" height="90" rx="12" fill="#118AB2" fill-opacity="0.1" stroke="#118AB2" stroke-width="3" stroke-dasharray="8,4"/>
     </g>
     <g id="block-ankle-boxes" data-block="ankle">
-      <rect x="1500" y="900" width="440" height="100" rx="12" fill="#D00000" fill-opacity="0.06" stroke="#D00000" stroke-width="3" stroke-dasharray="8,4"/>
-      <rect x="1500" y="1058" width="470" height="70" rx="12" fill="#D00000" fill-opacity="0.06" stroke="#D00000" stroke-width="3" stroke-dasharray="8,4"/>
-      <rect x="1688" y="1285" width="360" height="30" rx="12" fill="#D00000" fill-opacity="0.08" stroke="#D00000" stroke-width="3" stroke-dasharray="8,4"/>
-      <rect x="1500" y="510" width="398" height="30" rx="12" fill="#D00000" fill-opacity="0.1" stroke="#D00000" stroke-width="3" stroke-dasharray="8,4"/>
-      <line x1="1899" y1="925" x2="1965" y2="540" stroke="#D00000" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
-      <line x1="1965" y1="540" x2="1898" y2="525" stroke="#D00000" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
+      <rect x="1565" y="1262" width="490" height="80" rx="12" fill="#D00000" fill-opacity="0.06" stroke="#D00000" stroke-width="3" stroke-dasharray="8,4"/>
+      <rect x="1565" y="1404" width="500" height="66" rx="12" fill="#D00000" fill-opacity="0.06" stroke="#D00000" stroke-width="3" stroke-dasharray="8,4"/>
+      <rect x="1792" y="1504" width="380" height="32" rx="12" fill="#D00000" fill-opacity="0.08" stroke="#D00000" stroke-width="3" stroke-dasharray="8,4"/>
+      <rect x="1565" y="812" width="460" height="26" rx="12" fill="#D00000" fill-opacity="0.1" stroke="#D00000" stroke-width="3" stroke-dasharray="8,4"/>
+      <line x1="2010" y1="1290" x2="2120" y2="838" stroke="#D00000" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
+      <line x1="2120" y1="838" x2="2025" y2="825" stroke="#D00000" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
     </g>
   </g>
-
     <g class="block-overlay-pills">
-    <g id="block-tapsub-pills" data-block="tapsub">
-      <rect x="90" y="184" width="99" height="20" rx="6" fill="#FB8500"/><text x="140" y="198" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">TAP SUBCOSTAL</text>
-    </g>
-    <g id="block-taplat-pills" data-block="taplat">
-      <rect x="545" y="256" width="86" height="20" rx="6" fill="#F77F00"/><text x="588" y="270" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">TAP LATERAL</text>
-    </g>
-    <g id="block-tappost-pills" data-block="tappost">
-      <rect x="360" y="262" width="99" height="20" rx="6" fill="#E85D04"/><text x="410" y="276" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">TAP POSTERIOR</text>
-    </g>
-    <g id="block-rectus-pills" data-block="rectus">
-      <rect x="950" y="276" width="112" height="20" rx="6" fill="#DDA15E"/><text x="1006" y="290" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">BAINHA DO RECTO</text>
-    </g>
     <g id="block-iihg-pills" data-block="iihg">
-      <rect x="548" y="433" width="180" height="20" rx="6" fill="#BC6C25"/><text x="638" y="447" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">ILIOINGUINAL / ÍLIO-HIPO.</text>
-      <line x1="662" y1="455" x2="662" y2="395" stroke="#BC6C25" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
+      <rect x="548" y="258" width="133" height="20" rx="6" fill="#BC6C25"/><text x="614" y="272" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">ILIOINGUINAL / IHG</text>
     </g>
     <g id="block-ql1-pills" data-block="ql1">
-      <rect x="196" y="228" width="86" height="20" rx="6" fill="#D62976"/><text x="239" y="242" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">QL1 LATERAL</text>
+      <rect x="196" y="278" width="86" height="20" rx="6" fill="#D62976"/><text x="239" y="292" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">QL1 LATERAL</text>
     </g>
     <g id="block-ql2-pills" data-block="ql2">
-      <rect x="85" y="234" width="99" height="20" rx="6" fill="#B5179E"/><text x="135" y="248" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">QL2 POSTERIOR</text>
+      <rect x="85" y="283" width="99" height="20" rx="6" fill="#B5179E"/><text x="135" y="297" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">QL2 POSTERIOR</text>
     </g>
     <g id="block-ql3-pills" data-block="ql3">
-      <rect x="224" y="626" width="126" height="20" rx="6" fill="#7B2CBF"/><text x="287" y="640" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">QL3 TRANSMUSCULAR</text>
-      <line x1="294" y1="648" x2="294" y2="638" stroke="#7B2CBF" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
+      <rect x="224" y="791" width="126" height="20" rx="6" fill="#7B2CBF"/><text x="287" y="805" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">QL3 TRANSMUSCULAR</text>
+      <line x1="294" y1="813" x2="294" y2="791" stroke="#7B2CBF" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
     </g>
     <g id="block-esp-pills" data-block="esp">
-      <rect x="84" y="248" width="79" height="20" rx="6" fill="#5A189A"/><text x="124" y="262" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">ESP LOMBAR</text>
+      <rect x="84" y="768" width="79" height="20" rx="6" fill="#5A189A"/><text x="124" y="782" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">ESP LUMBAR</text>
+      <line x1="149" y1="790" x2="149" y2="772" stroke="#5A189A" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
     </g>
     <g id="block-lpb-pills" data-block="lpb">
-      <rect x="220" y="626" width="166" height="20" rx="6" fill="#023E8A"/><text x="303" y="640" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">PLEXO LOMBAR (SHAMROCK)</text>
-      <line x1="292" y1="648" x2="292" y2="638" stroke="#023E8A" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
+      <rect x="220" y="260" width="173" height="20" rx="6" fill="#023E8A"/><text x="306" y="274" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">LUMBAR PLEXUS (SHAMROCK)</text>
     </g>
     <g id="block-peng-pills" data-block="peng">
-      <rect x="948" y="604" width="39" height="20" rx="6" fill="#0096C7"/><text x="967" y="618" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">PENG</text>
-    </g>
-    <g id="block-fnb-pills" data-block="fnb">
-      <rect x="548" y="571" width="59" height="20" rx="6" fill="#0077B6"/><text x="577" y="585" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">FEMORAL</text>
-    </g>
-    <g id="block-fics-pills" data-block="fics">
-      <rect x="548" y="478" width="166" height="20" rx="6" fill="#00B4D8"/><text x="631" y="492" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">FÁSCIA ILÍACA SUPRAING.</text>
-    </g>
-    <g id="block-fici-pills" data-block="fici">
-      <rect x="900" y="538" width="166" height="20" rx="6" fill="#48CAE4"/><text x="983" y="552" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">FÁSCIA ILÍACA INFRAING.</text>
-      <line x1="900" y1="560" x2="773" y2="560" stroke="#48CAE4" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
-    </g>
-    <g id="block-acb-pills" data-block="acb">
-      <rect x="965" y="484" width="133" height="20" rx="6" fill="#2A9D8F"/><text x="1031" y="498" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">CANAL DOS ADUTORES</text>
-    </g>
-    <g id="block-lfcb-pills" data-block="lfcb">
-      <rect x="792" y="502" width="126" height="20" rx="6" fill="#52B788"/><text x="855" y="516" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">CUT. FEMORAL LAT.</text>
-      <line x1="792" y1="524" x2="778" y2="524" stroke="#52B788" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
-    </g>
-    <g id="block-obtb-pills" data-block="obtb">
-      <rect x="550" y="669" width="72" height="20" rx="6" fill="#2D6A4F"/><text x="586" y="683" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">OBTURADOR</text>
-    </g>
-    <g id="block-pfcb-pills" data-block="pfcb">
-      <rect x="792" y="898" width="133" height="20" rx="6" fill="#74C69D"/><text x="858" y="912" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">CUT. FEMORAL POST.</text>
-      <line x1="792" y1="920" x2="778" y2="920" stroke="#74C69D" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
-    </g>
-    <g id="block-subg-pills" data-block="subg">
-      <rect x="548" y="876" width="146" height="20" rx="6" fill="#6A0DAD"/><text x="621" y="890" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">ISQUIÁTICO SUBGLÚTEO</text>
-    </g>
-    <g id="block-antsci-pills" data-block="antsci">
-      <rect x="552" y="1019" width="139" height="20" rx="6" fill="#9D4EDD"/><text x="622" y="1033" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">ISQUIÁTICO ANTERIOR</text>
-      <line x1="662" y1="1041" x2="662" y2="1021" stroke="#9D4EDD" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
-    </g>
-    <g id="block-pop-pills" data-block="pop">
-      <rect x="965" y="918" width="139" height="20" rx="6" fill="#C71585"/><text x="1035" y="932" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">ISQUIÁTICO POPLÍTEO</text>
-    </g>
-    <g id="block-ipack-pills" data-block="ipack">
-      <rect x="1234" y="941" width="46" height="20" rx="6" fill="#FF5C8A"/><text x="1257" y="955" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">iPACK</text>
-      <line x1="1234" y1="963" x2="1222" y2="963" stroke="#FF5C8A" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
+      <rect x="972" y="602" width="253" height="20" rx="6" fill="#0096C7"/><text x="1099" y="616" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">PENG (femoral + obturator articular)</text>
     </g>
     <g id="block-pudb-pills" data-block="pudb">
-      <rect x="550" y="1194" width="59" height="20" rx="6" fill="#7B5E1A"/><text x="579" y="1208" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">PUDENDO</text>
+      <rect x="548" y="1459" width="66" height="20" rx="6" fill="#7B5E1A"/><text x="581" y="1473" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">PUDENDAL</text>
+    </g>
+    <g id="block-fnb-pills" data-block="fnb">
+      <rect x="548" y="587" width="79" height="20" rx="6" fill="#0077B6"/><text x="588" y="601" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">FEMORAL N.</text>
+    </g>
+    <g id="block-fics-pills" data-block="fics">
+      <rect x="548" y="473" width="153" height="20" rx="6" fill="#00B4D8"/><text x="624" y="487" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">FASCIA ILIACA — SUPRA</text>
+    </g>
+    <g id="block-fici-pills" data-block="fici">
+      <rect x="806" y="538" width="153" height="20" rx="6" fill="#48CAE4"/><text x="882" y="552" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">FASCIA ILIACA — INFRA</text>
+      <line x1="806" y1="560" x2="774" y2="560" stroke="#48CAE4" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
+    </g>
+    <g id="block-acb-pills" data-block="acb">
+      <rect x="970" y="690" width="106" height="20" rx="6" fill="#2A9D8F"/><text x="1023" y="704" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">ADDUCTOR CANAL</text>
+    </g>
+    <g id="block-actb-pills" data-block="actb">
+      <rect x="1304" y="580" width="133" height="20" rx="6" fill="#E0954A"/><text x="1370" y="594" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">ANT. CUT. N. THIGH</text>
+      <line x1="1304" y1="602" x2="1300" y2="602" stroke="#E0954A" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
+    </g>
+    <g id="block-lcnt-pills" data-block="lcnt">
+      <rect x="548" y="472" width="133" height="20" rx="6" fill="#52B788"/><text x="614" y="486" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">LAT. CUT. N. THIGH</text>
+    </g>
+    <g id="block-obtb-pills" data-block="obtb">
+      <rect x="548" y="864" width="92" height="20" rx="6" fill="#2D6A4F"/><text x="594" y="878" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">OBTURATOR N.</text>
+    </g>
+    <g id="block-pfcb-pills" data-block="pfcb">
+      <rect x="786" y="1104" width="139" height="20" rx="6" fill="#C2407A"/><text x="856" y="1118" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">POST. CUT. N. THIGH</text>
+      <line x1="786" y1="1126" x2="778" y2="1126" stroke="#C2407A" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
+    </g>
+    <g id="block-subg-pills" data-block="subg">
+      <rect x="548" y="1083" width="133" height="20" rx="6" fill="#6A0DAD"/><text x="614" y="1097" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">SCIATIC SUBGLUTEAL</text>
+    </g>
+    <g id="block-antsci-pills" data-block="antsci">
+      <rect x="552" y="1319" width="119" height="20" rx="6" fill="#9D4EDD"/><text x="612" y="1333" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">SCIATIC ANTERIOR</text>
+      <line x1="662" y1="1341" x2="662" y2="1319" stroke="#9D4EDD" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
+    </g>
+    <g id="block-pop-pills" data-block="pop">
+      <rect x="970" y="1194" width="126" height="20" rx="6" fill="#C71585"/><text x="1033" y="1208" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">SCIATIC POPLITEAL</text>
+    </g>
+    <g id="block-ipack-pills" data-block="ipack">
+      <rect x="1268" y="1216" width="46" height="20" rx="6" fill="#FF5C8A"/><text x="1291" y="1230" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">iPACK</text>
+      <line x1="1268" y1="1238" x2="1266" y2="1238" stroke="#FF5C8A" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
     </g>
     <g id="block-saphb-pills" data-block="saphb">
-      <rect x="1500" y="486" width="99" height="20" rx="6" fill="#118AB2"/><text x="1550" y="500" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">SAFENO DISTAL</text>
+      <rect x="1565" y="726" width="119" height="20" rx="6" fill="#118AB2"/><text x="1625" y="740" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">SAPHENOUS DISTAL</text>
     </g>
     <g id="block-ankle-pills" data-block="ankle">
-      <rect x="1500" y="878" width="200" height="20" rx="6" fill="#D00000"/><text x="1600" y="892" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">BLOQUEIO DO TORNOZELO (5 N.)</text>
+      <rect x="1565" y="1240" width="159" height="20" rx="6" fill="#D00000"/><text x="1645" y="1254" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">ANKLE BLOCK (5 NERVES)</text>
     </g>
   </g>
-
-  <g transform="translate(60, 1380)">
-    <text x="0" y="0" font-size="13" font-weight="700" fill="#5a7a82" letter-spacing="1.5">LEGENDA — NERVOS</text>
+  <g transform="translate(60, 1660)">
+    <text x="0" y="0" font-size="13" font-weight="700" fill="#5a7a82" letter-spacing="1.5">LEGEND — NERVES</text>
     <rect x="0" y="20" width="26" height="12" rx="2" fill="#5a7a82"/>
-    <text x="34" y="30" font-size="12" fill="#1a2e35">Raízes / pré-plexo</text>
-    <rect x="360" y="20" width="26" height="12" rx="2" fill="#14707a"/>
-    <text x="394" y="30" font-size="12" fill="#1a2e35">Plexo lombar</text>
-    <rect x="720" y="20" width="26" height="12" rx="2" fill="#5a189a"/>
-    <text x="754" y="30" font-size="12" fill="#1a2e35">Plexo sagrado / isquiático</text>
-    <rect x="1080" y="20" width="26" height="12" rx="2" fill="#023e8a"/>
-    <text x="1114" y="30" font-size="12" fill="#1a2e35">Femoral</text>
-    <rect x="1440" y="20" width="26" height="12" rx="2" fill="#0096c7"/>
-    <text x="1474" y="30" font-size="12" fill="#1a2e35">Safeno</text>
+    <text x="34" y="30" font-size="12" fill="#1a2e35">Roots / pre-plexus</text>
+    <rect x="380" y="20" width="26" height="12" rx="2" fill="#14707a"/>
+    <text x="414" y="30" font-size="12" fill="#1a2e35">Lumbar plexus</text>
+    <rect x="760" y="20" width="26" height="12" rx="2" fill="#5a189a"/>
+    <text x="794" y="30" font-size="12" fill="#1a2e35">Sacral plexus / sciatic</text>
+    <rect x="1140" y="20" width="26" height="12" rx="2" fill="#023e8a"/>
+    <text x="1174" y="30" font-size="12" fill="#1a2e35">Femoral</text>
+    <rect x="1520" y="20" width="26" height="12" rx="2" fill="#0096c7"/>
+    <text x="1554" y="30" font-size="12" fill="#1a2e35">Saphenous</text>
     <rect x="0" y="46" width="26" height="12" rx="2" fill="#2a9d5f"/>
-    <text x="34" y="56" font-size="12" fill="#1a2e35">Obturador</text>
-    <rect x="360" y="46" width="26" height="12" rx="2" fill="#d62976"/>
-    <text x="394" y="56" font-size="12" fill="#1a2e35">Cutâneo femoral lateral</text>
-    <rect x="720" y="46" width="26" height="12" rx="2" fill="#b58900"/>
-    <text x="754" y="56" font-size="12" fill="#1a2e35">Genitofemoral</text>
-    <rect x="1080" y="46" width="26" height="12" rx="2" fill="#6a8532"/>
-    <text x="1114" y="56" font-size="12" fill="#1a2e35">Parede abdominal</text>
-    <rect x="1440" y="46" width="26" height="12" rx="2" fill="#9c6644"/>
-    <text x="1474" y="56" font-size="12" fill="#1a2e35">Glúteos</text>
+    <text x="34" y="56" font-size="12" fill="#1a2e35">Obturator</text>
+    <rect x="380" y="46" width="26" height="12" rx="2" fill="#d62976"/>
+    <text x="414" y="56" font-size="12" fill="#1a2e35">Lat. cutaneous n. of thigh</text>
+    <rect x="760" y="46" width="26" height="12" rx="2" fill="#b58900"/>
+    <text x="794" y="56" font-size="12" fill="#1a2e35">Genitofemoral</text>
+    <rect x="1140" y="46" width="26" height="12" rx="2" fill="#6a8532"/>
+    <text x="1174" y="56" font-size="12" fill="#1a2e35">Abdominal wall nn.</text>
+    <rect x="1520" y="46" width="26" height="12" rx="2" fill="#9c6644"/>
+    <text x="1554" y="56" font-size="12" fill="#1a2e35">Gluteal</text>
     <rect x="0" y="72" width="26" height="12" rx="2" fill="#c2407a"/>
-    <text x="34" y="82" font-size="12" fill="#1a2e35">Cutâneo femoral post.</text>
-    <rect x="360" y="72" width="26" height="12" rx="2" fill="#7b5e1a"/>
-    <text x="394" y="82" font-size="12" fill="#1a2e35">Pudendo</text>
-    <rect x="720" y="72" width="26" height="12" rx="2" fill="#3a0ca3"/>
-    <text x="754" y="82" font-size="12" fill="#1a2e35">Tibial</text>
-    <rect x="1080" y="72" width="26" height="12" rx="2" fill="#dc4900"/>
-    <text x="1114" y="82" font-size="12" fill="#1a2e35">Fibular comum</text>
-    <rect x="1440" y="72" width="26" height="12" rx="2" fill="#9d4edd"/>
-    <text x="1474" y="82" font-size="12" fill="#1a2e35">Sural</text>
-    <text x="0" y="96" font-size="11" font-style="italic" fill="#5a7a82">Modalidade assinalada apenas nos nervos puros (sensitivo / motor); os restantes são mistos.</text>
+    <text x="34" y="82" font-size="12" fill="#1a2e35">Post. cutaneous n. of thigh</text>
+    <rect x="380" y="72" width="26" height="12" rx="2" fill="#7b5e1a"/>
+    <text x="414" y="82" font-size="12" fill="#1a2e35">Pudendal</text>
+    <rect x="760" y="72" width="26" height="12" rx="2" fill="#3a0ca3"/>
+    <text x="794" y="82" font-size="12" fill="#1a2e35">Tibial</text>
+    <rect x="1140" y="72" width="26" height="12" rx="2" fill="#dc4900"/>
+    <text x="1174" y="82" font-size="12" fill="#1a2e35">Common fibular</text>
+    <rect x="1520" y="72" width="26" height="12" rx="2" fill="#9d4edd"/>
+    <text x="1554" y="82" font-size="12" fill="#1a2e35">Sural</text>
+    <text x="0" y="116" font-size="11" font-style="italic" fill="#5a7a82">Modality shown only on purely sensory / motor nerves; the rest are mixed.</text>
   </g>
-  <g transform="translate(60, 1500)">
-    <text x="0" y="0" font-size="13" font-weight="700" fill="#5a7a82" letter-spacing="1.5">LEGENDA — BLOCOS</text>
-    <rect x="0" y="20" width="26" height="12" rx="2" fill="#FB8500"/>
-    <text x="34" y="30" font-size="11.5" fill="#1a2e35">TAP subcostal</text>
-    <rect x="400" y="20" width="26" height="12" rx="2" fill="#F77F00"/>
-    <text x="434" y="30" font-size="11.5" fill="#1a2e35">TAP lateral</text>
-    <rect x="800" y="20" width="26" height="12" rx="2" fill="#E85D04"/>
-    <text x="834" y="30" font-size="11.5" fill="#1a2e35">TAP posterior</text>
-    <rect x="1200" y="20" width="26" height="12" rx="2" fill="#DDA15E"/>
-    <text x="1234" y="30" font-size="11.5" fill="#1a2e35">Bainha do recto</text>
-    <rect x="1600" y="20" width="26" height="12" rx="2" fill="#BC6C25"/>
-    <text x="1634" y="30" font-size="11.5" fill="#1a2e35">Ilioinguinal–ílio-hipogástrico</text>
-    <rect x="0" y="46" width="26" height="12" rx="2" fill="#D62976"/>
-    <text x="34" y="56" font-size="11.5" fill="#1a2e35">Quadrado lombar — QL1 (lateral)</text>
-    <rect x="400" y="46" width="26" height="12" rx="2" fill="#B5179E"/>
-    <text x="434" y="56" font-size="11.5" fill="#1a2e35">Quadrado lombar — QL2 (posterior)</text>
-    <rect x="800" y="46" width="26" height="12" rx="2" fill="#7B2CBF"/>
-    <text x="834" y="56" font-size="11.5" fill="#1a2e35">Quadrado lombar — QL3 (transmuscular)</text>
-    <rect x="1200" y="46" width="26" height="12" rx="2" fill="#5A189A"/>
-    <text x="1234" y="56" font-size="11.5" fill="#1a2e35">Erector da espinha (ESP) lombar</text>
-    <rect x="1600" y="46" width="26" height="12" rx="2" fill="#023E8A"/>
-    <text x="1634" y="56" font-size="11.5" fill="#1a2e35">Plexo lombar (Shamrock / psoas)</text>
-    <rect x="0" y="72" width="26" height="12" rx="2" fill="#0096C7"/>
-    <text x="34" y="82" font-size="11.5" fill="#1a2e35">PENG (pericapsular nerve group)</text>
-    <rect x="400" y="72" width="26" height="12" rx="2" fill="#0077B6"/>
-    <text x="434" y="82" font-size="11.5" fill="#1a2e35">Nervo femoral</text>
-    <rect x="800" y="72" width="26" height="12" rx="2" fill="#00B4D8"/>
-    <text x="834" y="82" font-size="11.5" fill="#1a2e35">Fáscia ilíaca suprainguinal</text>
-    <rect x="1200" y="72" width="26" height="12" rx="2" fill="#48CAE4"/>
-    <text x="1234" y="82" font-size="11.5" fill="#1a2e35">Fáscia ilíaca infrainguinal</text>
-    <rect x="1600" y="72" width="26" height="12" rx="2" fill="#2A9D8F"/>
-    <text x="1634" y="82" font-size="11.5" fill="#1a2e35">Canal dos adutores</text>
-    <rect x="0" y="98" width="26" height="12" rx="2" fill="#52B788"/>
-    <text x="34" y="108" font-size="11.5" fill="#1a2e35">Cutâneo femoral lateral</text>
-    <rect x="400" y="98" width="26" height="12" rx="2" fill="#2D6A4F"/>
-    <text x="434" y="108" font-size="11.5" fill="#1a2e35">Obturador (+ selectivo dos ramos)</text>
-    <rect x="800" y="98" width="26" height="12" rx="2" fill="#74C69D"/>
-    <text x="834" y="108" font-size="11.5" fill="#1a2e35">Cutâneo femoral posterior</text>
-    <rect x="1200" y="98" width="26" height="12" rx="2" fill="#6A0DAD"/>
-    <text x="1234" y="108" font-size="11.5" fill="#1a2e35">Isquiático subglúteo / transglúteo</text>
-    <rect x="1600" y="98" width="26" height="12" rx="2" fill="#9D4EDD"/>
-    <text x="1634" y="108" font-size="11.5" fill="#1a2e35">Isquiático anterior</text>
-    <rect x="0" y="124" width="26" height="12" rx="2" fill="#C71585"/>
-    <text x="34" y="134" font-size="11.5" fill="#1a2e35">Isquiático poplíteo</text>
-    <rect x="400" y="124" width="26" height="12" rx="2" fill="#FF5C8A"/>
-    <text x="434" y="134" font-size="11.5" fill="#1a2e35">iPACK (cápsula posterior do joelho)</text>
-    <rect x="800" y="124" width="26" height="12" rx="2" fill="#7B5E1A"/>
-    <text x="834" y="134" font-size="11.5" fill="#1a2e35">Pudendo</text>
-    <rect x="1200" y="124" width="26" height="12" rx="2" fill="#118AB2"/>
-    <text x="1234" y="134" font-size="11.5" fill="#1a2e35">Safeno (joelho / perna)</text>
-    <rect x="1600" y="124" width="26" height="12" rx="2" fill="#D00000"/>
-    <text x="1634" y="134" font-size="11.5" fill="#1a2e35">Bloqueio do tornozelo (5 nervos)</text>
+  <g transform="translate(60, 1830)">
+    <text x="0" y="0" font-size="13" font-weight="700" fill="#5a7a82" letter-spacing="1.5">LEGEND — BLOCKS</text>
+    <rect x="0" y="20" width="26" height="12" rx="2" fill="#BC6C25"/>
+    <text x="34" y="30" font-size="11" fill="#1a2e35">Ilioinguinal–iliohypogastric block</text>
+    <rect x="430" y="20" width="26" height="12" rx="2" fill="#D62976"/>
+    <text x="464" y="30" font-size="11" fill="#1a2e35">Quadratus lumborum — QL1 (lateral)</text>
+    <rect x="860" y="20" width="26" height="12" rx="2" fill="#B5179E"/>
+    <text x="894" y="30" font-size="11" fill="#1a2e35">Quadratus lumborum — QL2 (posterior)</text>
+    <rect x="1290" y="20" width="26" height="12" rx="2" fill="#7B2CBF"/>
+    <text x="1324" y="30" font-size="11" fill="#1a2e35">Quadratus lumborum — QL3 (transmuscular)</text>
+    <rect x="1720" y="20" width="26" height="12" rx="2" fill="#5A189A"/>
+    <text x="1754" y="30" font-size="11" fill="#1a2e35">Erector spinae plane (lumbar)</text>
+    <rect x="0" y="46" width="26" height="12" rx="2" fill="#023E8A"/>
+    <text x="34" y="56" font-size="11" fill="#1a2e35">Lumbar plexus block (Shamrock / psoas)</text>
+    <rect x="430" y="46" width="26" height="12" rx="2" fill="#0096C7"/>
+    <text x="464" y="56" font-size="11" fill="#1a2e35">PENG (pericapsular nerve group)</text>
+    <rect x="860" y="46" width="26" height="12" rx="2" fill="#7B5E1A"/>
+    <text x="894" y="56" font-size="11" fill="#1a2e35">Pudendal nerve block</text>
+    <rect x="1290" y="46" width="26" height="12" rx="2" fill="#0077B6"/>
+    <text x="1324" y="56" font-size="11" fill="#1a2e35">Femoral nerve block</text>
+    <rect x="1720" y="46" width="26" height="12" rx="2" fill="#00B4D8"/>
+    <text x="1754" y="56" font-size="11" fill="#1a2e35">Fascia iliaca — suprainguinal</text>
+    <rect x="0" y="72" width="26" height="12" rx="2" fill="#48CAE4"/>
+    <text x="34" y="82" font-size="11" fill="#1a2e35">Fascia iliaca — infrainguinal</text>
+    <rect x="430" y="72" width="26" height="12" rx="2" fill="#2A9D8F"/>
+    <text x="464" y="82" font-size="11" fill="#1a2e35">Adductor canal block</text>
+    <rect x="860" y="72" width="26" height="12" rx="2" fill="#E0954A"/>
+    <text x="894" y="82" font-size="11" fill="#1a2e35">Anterior cutaneous n. of thigh block</text>
+    <rect x="1290" y="72" width="26" height="12" rx="2" fill="#52B788"/>
+    <text x="1324" y="82" font-size="11" fill="#1a2e35">Lateral cutaneous n. of thigh block</text>
+    <rect x="1720" y="72" width="26" height="12" rx="2" fill="#2D6A4F"/>
+    <text x="1754" y="82" font-size="11" fill="#1a2e35">Obturator nerve block (± selective)</text>
+    <rect x="0" y="98" width="26" height="12" rx="2" fill="#C2407A"/>
+    <text x="34" y="108" font-size="11" fill="#1a2e35">Posterior cutaneous n. of thigh block</text>
+    <rect x="430" y="98" width="26" height="12" rx="2" fill="#6A0DAD"/>
+    <text x="464" y="108" font-size="11" fill="#1a2e35">Sciatic — subgluteal / transgluteal</text>
+    <rect x="860" y="98" width="26" height="12" rx="2" fill="#9D4EDD"/>
+    <text x="894" y="108" font-size="11" fill="#1a2e35">Sciatic — anterior</text>
+    <rect x="1290" y="98" width="26" height="12" rx="2" fill="#C71585"/>
+    <text x="1324" y="108" font-size="11" fill="#1a2e35">Sciatic — popliteal</text>
+    <rect x="1720" y="98" width="26" height="12" rx="2" fill="#FF5C8A"/>
+    <text x="1754" y="108" font-size="11" fill="#1a2e35">iPACK (posterior knee capsule)</text>
+    <rect x="0" y="124" width="26" height="12" rx="2" fill="#118AB2"/>
+    <text x="34" y="134" font-size="11" fill="#1a2e35">Saphenous nerve (knee / leg)</text>
+    <rect x="430" y="124" width="26" height="12" rx="2" fill="#D00000"/>
+    <text x="464" y="134" font-size="11" fill="#1a2e35">Ankle block (5 nerves)</text>
   </g>
 </svg>
     <button class="zoom-reset" aria-label="Reset zoom" title="Reset zoom">
@@ -1343,12 +1324,12 @@ body { display: flex; }
     </button>
   </section>
 
-  <button class="drawer-toggle" aria-label="Abrir seletor de bloqueios">Bloqueios</button>
+  <button class="drawer-toggle" aria-label="Open block selector">Blocks</button>
   <div class="drawer-backdrop" aria-hidden="true"></div>
 
 <script>
 (() => {
-  const PRESETS = {"all": ["tapsub", "taplat", "tappost", "rectus", "iihg", "ql1", "ql2", "ql3", "esp", "lpb", "peng", "fnb", "fics", "fici", "acb", "lfcb", "obtb", "pfcb", "subg", "antsci", "pop", "ipack", "pudb", "saphb", "ankle"], "none": [], "anca": ["peng", "fics", "lpb"], "joelho": ["acb", "ipack", "fnb"], "pe": ["pop", "saphb", "ankle"], "parede": ["tapsub", "taplat", "tappost", "rectus", "iihg"], "fascial": ["ql1", "ql2", "ql3", "esp", "lpb"], "motor-sparing": ["peng", "acb", "ipack", "lfcb", "pfcb"]};
+  const PRESETS = {"all": ["iihg", "ql1", "ql2", "ql3", "esp", "lpb", "peng", "pudb", "fnb", "fics", "fici", "acb", "actb", "lcnt", "obtb", "pfcb", "subg", "antsci", "pop", "ipack", "saphb", "ankle"], "none": [], "hip": ["peng", "fics", "lpb"], "knee": ["acb", "ipack", "fnb"], "foot": ["pop", "saphb", "ankle"], "proximal": ["iihg", "ql1", "ql2", "ql3", "esp"], "fascial": ["ql1", "ql2", "ql3", "esp", "lpb"], "motor-sparing": ["peng", "acb", "ipack", "lcnt", "pfcb", "actb"]};
 
   // ===== Block toggles =====
   function setBlockVisible(blockId, visible) {
