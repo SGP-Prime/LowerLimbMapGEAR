@@ -325,8 +325,9 @@ body { display: flex; }
           <label class="block-item"><input type="checkbox" data-block="ipack" checked><span class="block-color" style="background:#FF5C8A"></span><span class="block-name">iPACK (posterior knee capsule)</span></label>
         </div>
         <div class="block-group">
-          <h4>Terminal branches</h4>
+          <h4>Knee / terminal</h4>
           <label class="block-item"><input type="checkbox" data-block="saphb" checked><span class="block-color" style="background:#118AB2"></span><span class="block-name">Saphenous nerve (knee / leg)</span></label>
+          <label class="block-item"><input type="checkbox" data-block="gen" checked><span class="block-color" style="background:#BC4749"></span><span class="block-name">Genicular nerve block (knee)</span></label>
           <label class="block-item"><input type="checkbox" data-block="ankle" checked><span class="block-color" style="background:#D00000"></span><span class="block-name">Ankle block (5 nerves)</span></label>
         </div>
     <p class="footnote">
@@ -1053,6 +1054,13 @@ body { display: flex; }
   <circle cx="1890" cy="1520" r="6" fill="#ffffff" stroke="#9d4edd" stroke-width="2.5"/>
   <text x="1902" y="1524" class="lbl-bold">Sural n. → lateral foot, 5th toe, lateral malleolus</text>
   <text x="1902" y="1539" class="lbl-small-i">convergence: medial sural [tibial] + communicating [fibular]</text>
+
+  <circle cx="1640" cy="940" r="6" fill="#ffffff" stroke="#bc4749" stroke-width="2.5"/>
+  <text x="1654" y="944" class="lbl-bold">Genicular nn. of knee (articular)</text>
+  <text x="1654" y="968" class="lbl-small">Superomedial g.n. ← n. to vastus medialis / saphenous</text>
+  <text x="1654" y="988" class="lbl-small">Superolateral g.n. ← n. to vastus lateralis</text>
+  <text x="1654" y="1008" class="lbl-small">Inferomedial g.n. ← tibial n.</text>
+  <text x="1654" y="1028" class="lbl-small">(inferolateral ← common fibular — avoided · posterior = iPACK)</text>
   <text x="608" y="228" class="grp">LUMBAR PLEXUS — within psoas major</text>
   <text x="608" y="978" class="grp">SACRAL PLEXUS — on piriformis</text>
 
@@ -1146,6 +1154,9 @@ body { display: flex; }
     <g id="block-saphb-boxes" data-block="saphb">
       <rect x="1625" y="758" width="440" height="90" rx="12" fill="#118AB2" fill-opacity="0.1" stroke="#118AB2" stroke-width="3" stroke-dasharray="8,4"/>
     </g>
+    <g id="block-gen-boxes" data-block="gen">
+      <rect x="1625" y="924" width="492" height="128" rx="12" fill="#BC4749" fill-opacity="0.08" stroke="#BC4749" stroke-width="3" stroke-dasharray="8,4"/>
+    </g>
     <g id="block-ankle-boxes" data-block="ankle">
       <rect x="1625" y="1262" width="490" height="80" rx="12" fill="#D00000" fill-opacity="0.06" stroke="#D00000" stroke-width="3" stroke-dasharray="8,4"/>
       <rect x="1625" y="1404" width="500" height="66" rx="12" fill="#D00000" fill-opacity="0.06" stroke="#D00000" stroke-width="3" stroke-dasharray="8,4"/>
@@ -1226,6 +1237,9 @@ body { display: flex; }
     <g id="block-saphb-pills" data-block="saphb">
       <rect x="1625" y="736" width="119" height="20" rx="6" fill="#118AB2"/><text x="1685" y="750" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">SAPHENOUS DISTAL</text>
     </g>
+    <g id="block-gen-pills" data-block="gen">
+      <rect x="1625" y="902" width="153" height="20" rx="6" fill="#BC4749"/><text x="1701" y="916" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">GENICULAR NERVE BLOCK</text>
+    </g>
     <g id="block-ankle-pills" data-block="ankle">
       <rect x="1625" y="1240" width="159" height="20" rx="6" fill="#D00000"/><text x="1705" y="1254" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="0.4">ANKLE BLOCK (5 NERVES)</text>
     </g>
@@ -1262,7 +1276,9 @@ body { display: flex; }
     <text x="1234" y="82" font-size="12" fill="#1a2e35">Sural</text>
     <rect x="1600" y="72" width="26" height="12" rx="2" fill="#3a6ea5"/>
     <text x="1634" y="82" font-size="12" fill="#1a2e35">N. to vastus medialis</text>
-    <text x="0" y="116" font-size="11" font-style="italic" fill="#5a7a82">Femoral &amp; lateral cutaneous n. of thigh ← posterior divisions; obturator ← anterior divisions (L2–L4). Modality shown on purely sensory / motor nerves.</text>
+    <rect x="0" y="98" width="26" height="12" rx="2" fill="#bc4749"/>
+    <text x="34" y="108" font-size="12" fill="#1a2e35">Genicular nn. (knee)</text>
+    <text x="0" y="142" font-size="11" font-style="italic" fill="#5a7a82">Femoral &amp; lateral cutaneous n. of thigh ← posterior divisions; obturator ← anterior divisions (L2–L4). Modality shown on purely sensory / motor nerves.</text>
   </g>
   <g transform="translate(60, 1700)">
     <text x="0" y="0" font-size="13" font-weight="700" fill="#5a7a82" letter-spacing="1.5">LEGEND — BLOCKS</text>
@@ -1308,8 +1324,10 @@ body { display: flex; }
     <text x="1754" y="108" font-size="11" fill="#1a2e35">iPACK (posterior knee capsule)</text>
     <rect x="0" y="124" width="26" height="12" rx="2" fill="#118AB2"/>
     <text x="34" y="134" font-size="11" fill="#1a2e35">Saphenous nerve (knee / leg)</text>
-    <rect x="430" y="124" width="26" height="12" rx="2" fill="#D00000"/>
-    <text x="464" y="134" font-size="11" fill="#1a2e35">Ankle block (5 nerves)</text>
+    <rect x="430" y="124" width="26" height="12" rx="2" fill="#BC4749"/>
+    <text x="464" y="134" font-size="11" fill="#1a2e35">Genicular nerve block (knee)</text>
+    <rect x="860" y="124" width="26" height="12" rx="2" fill="#D00000"/>
+    <text x="894" y="134" font-size="11" fill="#1a2e35">Ankle block (5 nerves)</text>
   </g>
 </svg>
     <button class="zoom-reset" aria-label="Reset zoom" title="Reset zoom">
@@ -1325,7 +1343,7 @@ body { display: flex; }
 
 <script>
 (() => {
-  const PRESETS = {"all": ["iihg", "ql1", "ql2", "ql3", "esp", "lpb", "peng", "pudb", "fnb", "fics", "fici", "acb", "actb", "lcnt", "obtb", "pfcb", "subg", "antsci", "pop", "ipack", "saphb", "ankle"], "none": [], "hip": ["peng", "fics", "lpb"], "knee": ["acb", "ipack", "fnb"], "foot": ["pop", "saphb", "ankle"], "proximal": ["iihg", "ql1", "ql2", "ql3", "esp"], "fascial": ["ql1", "ql2", "ql3", "esp", "lpb"], "motor-sparing": ["peng", "acb", "ipack", "lcnt", "pfcb", "actb"]};
+  const PRESETS = {"all": ["iihg", "ql1", "ql2", "ql3", "esp", "lpb", "peng", "pudb", "fnb", "fics", "fici", "acb", "actb", "lcnt", "obtb", "pfcb", "subg", "antsci", "pop", "ipack", "saphb", "gen", "ankle"], "none": [], "hip": ["peng", "fics", "lpb"], "knee": ["acb", "ipack", "fnb", "gen"], "foot": ["pop", "saphb", "ankle"], "proximal": ["iihg", "ql1", "ql2", "ql3", "esp"], "fascial": ["ql1", "ql2", "ql3", "esp", "lpb"], "motor-sparing": ["peng", "acb", "ipack", "lcnt", "pfcb", "actb", "gen"]};
 
   // ===== Block toggles =====
   function setBlockVisible(blockId, visible) {
