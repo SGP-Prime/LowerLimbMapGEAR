@@ -6,16 +6,16 @@ Companion to Lesson 1 ([UpperLimbMapGEAR](https://github.com/SGP-Prime/UpperLimb
 
 ## Contents
 
-- `index.html` — self-contained interactive map (no external dependencies): pan/zoom, 23 toggleable blocks, regional presets, mobile drawer.
+- `index.html` — self-contained interactive map (no external dependencies): pan/zoom, 22 toggleable blocks, regional presets, mobile drawer.
 - `.nojekyll` — serves files as-is on GitHub Pages.
 
 ## Live
 
 https://sgp-prime.github.io/LowerLimbMapGEAR/
 
-## 23 blocks
+## 22 blocks
 
-Abdominal wall / proximal: ilioinguinal–iliohypogastric, quadratus lumborum (QL1/QL2/QL3), erector spinae plane (lumbar).
+Quadratus lumborum & paravertebral: quadratus lumborum (QL1/QL2/QL3), erector spinae plane (lumbar).
 Hip / pelvic: lumbar plexus (Shamrock), PENG, pudendal.
 Anterior thigh: femoral, fascia iliaca (suprainguinal / infrainguinal), adductor canal, anterior cutaneous n. of thigh.
 Lateral / posterior thigh: lateral cutaneous n. of thigh, obturator, posterior cutaneous n. of thigh.
